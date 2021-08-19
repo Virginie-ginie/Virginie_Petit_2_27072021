@@ -8,21 +8,30 @@ body{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    margin-left: 10px;
 }
 
 /*HEADER*/
+header{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between
+    ;
+}
 
 .logo{                 /*ok*/
     width: 100px;
     height: auto;
     margin:40px;
     display: flex;
+    padding-bottom: 10px;
+    
 }
 .navigation{
      margin: 10px;
     display: flex;
     justify-content: flex-end;
-
+    
 }
 .nav{
     list-style: none;
@@ -32,5 +41,82 @@ body{
 .navig{
     text-decoration:none; 
     margin: 10px;
-    height: 300px;
+}
+
+/* SECTION 2*/
+.titre-recherche{
+    font-size: 100%;
+    font-weight: bolder;
+}
+.complement{
+    font-size: 80%;
+    font-weight: bold;
+}
+.barrerecherche{
+    display: flex;
+    justify-content: flex-start;
+}
+.menu{
+    display: flex;
+    justify-content: flex-start;
+}
+
+/*SECTION 3*/
+.hebergement{
+    display: flex;
+    
+}
+.infos{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.titre{
+    font-size: 100%;
+    font-weight: bolder;
+}
+.images{
+    width: 150px;
+    height: 100px;
+    
+}
+.nom_hotel{
+    font-size: 15px;  
+    padding-bottom: 11px; 
+}
+.prix_hotel{
+    font-size: 10px;
+    padding-bottom: 11px;
+}
+#hebergement_et_populaire{
+    display: flex;
+    flex-direction :row;
+    justify-content :row;
+
+}
+.populaire{
+    width: 70px;
+    height: 70px;
+}
+/* SECTION 4*/
+
+#Activites{
+    display: flex;
+    flex-direction :row;
+    justify-content :space-around;
+    
+}
+
+.activite1{
+    width: 180px;
+    height: 220px;
+}
+.activite2{
+    width: 200px;
+    height: 120px;
+}
+/*FOOTER*/
+
+.titre_footer{
+    display: flex;
 }
