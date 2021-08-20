@@ -38,9 +38,21 @@ header{
     padding: 0;
     word-spacing: 15px;
 }
-.navig{
+.navig1{
     text-decoration:none; 
     margin: 10px;
+    color: blue;
+    border-top-width: 3px blue;
+}
+.navig2{
+    text-decoration:none; 
+    margin: 10px;
+    color: black;
+}
+.navig3{
+    text-decoration:none; 
+    margin: 10px;
+    color: blue;
 }
 
 /* SECTION 2*/
@@ -62,51 +74,81 @@ header{
 }
 
 /*SECTION 3*/
-.hebergement{
+
+#hebergement_et_populaire{
     display: flex;
+    flex-direction :row;
+    
+    border: 1px solid aqua;
+}
+
+.hebergement{
+    text-align: center;
+    border: 1px solid black;
+    width: 100%;
+    height: 200px;
+    
+}
+.herberg{
+    display: flex;
+    justify-content:space-between ;
     
 }
 .infos{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
+    border: 1px solid red;
 }
 .titre{
     font-size: 100%;
     font-weight: bolder;
+    border: 1px solid blue;
 }
 .images{
-    width: 150px;
-    height: 100px;
+    width: 236px;
+    height: 112px;
+    border: 1px solid purple;
+    object-fit: cover;
     
 }
 .nom_hotel{
     font-size: 15px;  
     padding-bottom: 11px; 
+    
+    border: 1px solid gold;
 }
 .prix_hotel{
     font-size: 10px;
     padding-bottom: 11px;
+    border: 1px solid green;
 }
-#hebergement_et_populaire{
-    display: flex;
-    flex-direction :row;
-    justify-content :row;
+.note_etoile{
+    color: blue;
+}
+ /* POPULAIRE*/
 
+.les_populaires{
+    display: flex;
+    flex-direction:column;
+    border:1px solid fuchsia
 }
+
 .populaire{
-    width: 70px;
-    height: 70px;
+    width: 132px;
+    height: 132px;
+    border: 1px solid orange;
+}
+.nom_hotel_pop{
+    display:flex;
+}
+.prix_hotel_pop{
+   display: flex;
 }
 /* SECTION 4*/
 
 #Activites{
     display: flex;
-    flex-direction :row;
-    justify-content :space-around;
-    
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
-
 .activite1{
     width: 180px;
     height: 220px;
