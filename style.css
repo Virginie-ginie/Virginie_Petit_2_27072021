@@ -114,6 +114,7 @@ header{
     padding: 44px 36px 44px 36px;
     max-width: 805px;
     text-align: center;
+    width: 100%;
     border: 1px solid darkred;
 }
 .herberg{
@@ -160,8 +161,15 @@ header{
     justify-content: flex-start;
     margin: 10px;
 }
-.note_etoile_grise{
-    color: gray;
+.etoile_grise{
+    color:gray;
+    display: flex;
+    position: relative;
+    top:9px;
+}
+.note{
+    display: flex;
+    
 }
  /* POPULAIRE*/
 
@@ -172,6 +180,7 @@ header{
     border-radius: 20px;
     padding: 45px 38px 31px 45px;
     max-width: 345px;
+    width: 100%;
     border: 1px solid chartreuse;
 }
 .les_populaires_aside{
@@ -185,7 +194,6 @@ header{
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
     display: flex;
-    flex-direction: column;
 }
 .tarif{
     padding: 7px 0px 7px 20px;
