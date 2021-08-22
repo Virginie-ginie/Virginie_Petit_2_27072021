@@ -6,17 +6,17 @@ html{
 
 body{
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+    margin: 0%;
+    padding: 0%;
     margin-left: 10px;
 }
 
-/*HEADER*/
+/*HEADER*/  /* NE PAS TOUCHER AU HEADER*/
 header{
     display:flex;
     flex-direction: row;
-    justify-content: space-between
-    ;
+    justify-content: space-between;
+    width: 100%;
 }
 
 .logo{                 /*ok*/
@@ -63,7 +63,7 @@ header{
     color: blue;
 }
 
-/* SECTION 2*/
+/* SECTION 2*/ 
 
 .titre-recherche{
     font-size: 100%;
@@ -77,21 +77,98 @@ header{
     display: flex;
     justify-content: flex-start;
 }
+
 .menu{
+    width: 100%;
+    height: auto;
     display: flex;
+    flex-wrap: wrap;
     justify-content: flex-start;
 }
-
-.recherche{
-    border:1px solid #0065FC;
-    background-color: #0065FC;
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
-    color: white;
-    padding: 5px;
-
+.filtre{
+    margin:15px;
+    font-weight: bold;
+    display: flex;
+}
+.menu1{
+    display: flex;
+    justify-content: flex-start;
+    border: 2px solid gray;
+    border-radius: 15px;
+    background-color: white;
+    margin:15px;
+    font-weight: bold;
+    padding:10px;
+}
+.menu2{
+    display: flex;
+    justify-content: flex-start;
+    border: 2px solid gray;
+    border-radius: 15px;
+    background-color: white;
+    margin: 15px;
+    font-weight: bold;
+    padding:10px;
+}
+.menu3{
+    display: flex;
+    justify-content: flex-start;
+    border: 2px solid gray;
+    border-radius: 15px;
+    background-color: white;
+    margin: 15px;
+    font-weight: bold;
+    padding:10px;
+}
+.menu4{
+    display: flex;
+    justify-content: flex-start;
+    border: 2px solid gray;
+    border-radius: 15px;
+    background-color: white;
+    margin: 15px;
+    font-weight: bold;
+    padding:10px;
 }
 
+
+.recherche{
+    background-color:#0065FC;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    color: white;
+    display: flex;
+}
+.fa-money-bill-wave  {
+    background-color:#DEEBFF;
+    border: 1px solide #DEEBFF;
+    border-radius: 50px;
+    color: #0065FC;
+    padding: 5px;
+    
+
+}
+.fa-child {
+    background-color:#DEEBFF;
+    border: 1px solide #DEEBFF;
+    border-radius: 50px;
+    color: #0065FC;
+    padding: 10px;
+}
+.fa-heart{
+    background-color:#DEEBFF;
+    border: 1px solide #DEEBFF;
+    border-radius: 50px;
+    color: #0065FC;
+    padding: 10px;
+}
+.fa-dog{
+    background-color:#DEEBFF;
+    border: 1px solide #DEEBFF;
+    border-radius: 50px;
+    color: #0065FC;
+    padding: 10px;
+}
 /*SECTION 3*/
 
 #hebergement_et_populaire{
@@ -117,7 +194,7 @@ header{
     width: 100%;
     border: 1px solid darkred;
 }
-.herberg{
+.heberg{
     display: flex;
     justify-content:space-between ;
     
@@ -184,8 +261,8 @@ header{
     border: 1px solid chartreuse;
 }
 .les_populaires_aside{
-    display: flex;
-    flex-direction: column;
+    border:1px solid black;
+
 }
 .populaire{
     width: 132px;
@@ -194,12 +271,14 @@ header{
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
     display: flex;
+    flex-direction: column;
+    
 }
 .tarif{
     padding: 7px 0px 7px 20px;
     display: flex;
     flex-direction: column;
-    border: 1px solid mediumorchid;
+    border: 3px solid lawngreen;
 }
 .nom_hotel_pop{
     font-size: 15px;
@@ -216,14 +295,11 @@ header{
 /* SECTION 4*/
 
 #Activites{
-
+    display: flex;
 }
 .titre{
     margin-bottom: 27px;
     font-size: large;
-}
-.Activites{
-    
 }
 
 .activite1{
@@ -239,7 +315,15 @@ header{
     width:300px;
     height: 150px;
     object-fit: cover;
+    display: flex;
+    flex-direction: column;
+
 }
+.lieux{
+    font-size: 15px;
+    text-decoration: none;
+}
+
 /*FOOTER*/
 
 .pied_page{
@@ -248,28 +332,24 @@ header{
     background-color: #F2F2F2;
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: space-between;
 }
 .propos{
-    display: flex;
-    flex-direction: column;
-
+    font-size: 13px;
+}
+.propos_texte{
+    font-size: 10px;
 }
 .footer_hebergement{
-    display: flex;
-    flex-direction: column;
-  
+    font-size: 13px;
+}
+.hebergements_footer{
+    font-size: 10px;
 }
 .assistance{
-    display: flex;
-    flex-direction: column;
-    
+    margin-right: 250px;
+    font-size: 13px;
 }
-.titre_footer_propos{
-    display: flex;
-    justify-content: space-between;
-}
-.titre_footer_hebergements{
-    display: flex;
-    justify-content: space-between;
+.assistance_texte{
+    font-size: 10px;
 }
