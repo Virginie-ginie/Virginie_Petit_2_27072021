@@ -2,13 +2,14 @@
 
 html {
 	font-family: "Raleway", sans-serif;
+	padding-left: 10px;
 }
 
 body {
 	box-sizing: border-box;
 	margin: 0%;
 	padding: 0%;
-	margin-left: 10px;
+	margin-left: 20px;
 }
 
 /*HEADER*/ /* NE PAS TOUCHER AU HEADER*/
@@ -77,90 +78,133 @@ header {
 .barrerecherche {
 	display: flex;
 	justify-content: flex-start;
+	max-width: 100%;
 }
+input{
+	border:3px solid #f2f2f2;
+	height: 2rem;
+    width: 130px;
 
+}
 .menu {
 	width: 100%;
 	height: auto;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: flex-start;
+	border: 5px solid red;
+}
+.fa-info{
+	background-color: #f2f2f2;
+	font-size: 13px;
+	border:8px solid #f2f2f2;
+	border-radius: 25px 25px 25px 25px;
+	color: #0065fc;
+	margin:10px;
+
+}
+::placeholder{
+	color: black;
+	font-weight: bold;
+	text-align: center;
 }
 .filtre {
 	margin: 15px;
 	font-weight: bold;
 	display: flex;
+	background-color: white;
+	border: 1px solid white;
+	border-radius:15px ;
+	
+}
+.fa-map-marker-alt{
+	background-color: #f2f2f2;
+	border: 5px solid #f2f2f2;
+	border-bottom-left-radius: 15px;
+	border-top-left-radius: 15px;
+	height: 1.4rem;
+    width: 40px;
+	text-align: center;
+
 }
 .menu1 {
 	display: flex;
-	justify-content: flex-start;
 	border: 2px solid gray;
-	border-radius: 25px;
+	border-left: 0px ;
+	border-radius:0 25px 25px 0;
 	background-color: white;
 	margin: 15px;
 	font-weight: bold;
 	padding: 10px;
+	width: 190px;
+	height: 40px;
+	flex-direction: row;
+	align-content: center;
+	flex-wrap: wrap;
 }
 
 .recherche {
-	background-color: #0065fc;
-	border-top-right-radius: 20px;
-	border-bottom-right-radius: 20px;
-	color: white;
-	display: flex;
+	height: 2rem;
+    width: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0px 20px 20px 0px;
+    background-color: #0065FC;
+    padding: 0px 20px 0px 20px;
+    color: white;
+    font-size: 14px;
+	font-weight: bold;
 }
+
 .fa-money-bill-wave {
 	background-color: #deebff;
-	border: 1px solide #deebff;
-	border-radius: 50px;
+	border: 1px solid #deebff;
+	border-radius: 25%;
 	color: #0065fc;
 	padding: 5px;
+	font-size: 20px;
 }
 .fa-child {
 	background-color: #deebff;
-	border: 1px solide #deebff;
-	border-radius: 50px;
+	border: 1px solid #deebff;
+	border-radius: 25%;
 	color: #0065fc;
 	padding: 10px;
+	font-size: 20px;
 }
 .fa-heart {
 	background-color: #deebff;
-	border: 1px solide #deebff;
-	border-radius: 50px;
+	border: 1px solid #deebff;
+	border-radius: 25%;
 	color: #0065fc;
 	padding: 10px;
+	font-size: 20px;
 }
 .fa-dog {
 	background-color: #deebff;
-	border: 1px solide #deebff;
-	border-radius: 50px;
+	border: 1px solid #deebff;
+	border-radius: 25%;
 	color: #0065fc;
 	padding: 10px;
+	font-size: 20px;
 }
 /*SECTION 3*/
 
 #hebergement_et_populaire {
-	background-color: aqua;
 	display: flex;
-	/* flex-direction: row; */
-	/* flex-wrap: wrap; */
 	justify-content: space-between;
-	
-	border: 1px solid aqua;
 }
 
 .main {
-	background-color: burlywood;
 	display: flex;
 	flex-direction: column;
-	/* justify-content: space-between;
-	align-content: space-between; */
-	border-radius: 20px;
-	padding: 44px 36px 44px 36px;
-	max-width: 805px;
-	text-align: center;
-	width: 100%;
-	border: 1px solid darkred;
+	border-radius: 20px 20px 20px 20px;
+	background-color:#f2f2f2;
+	margin-bottom: 40px ;
+	margin-right: 150px;
+	width: 2000px;
+	border: 5px solid red
 }
 .hebergement {
 	display: flex;
@@ -171,7 +215,7 @@ header {
 }
 .infos {
 	border: 1px solid white;
-	width: 236px;
+	width: 245px;
 	height: 220px;
     background-color: white;
     border-radius: 15px;
@@ -182,7 +226,6 @@ header {
 	font-weight: bolder;
     display: flex;
     justify-content: flex-start;
-	border: 1px solid blue;
 }
 .images {
 	width: 236px;
@@ -196,14 +239,12 @@ header {
 	font-size: 15px;
 	display: flex;
 	justify-content: flex-start;
-	border: 1px solid gold;
 }
 .prix_hotel {
 	display: flex;
 	justify-content: flex-start;
 	font-size: 10px;
 	font-weight: bold;
-	border: 1px solid green;
 }
 .note_etoile {
 	color: blue;
@@ -213,11 +254,15 @@ header {
 .etoile_grise {
 	color: gray;
 	display: flex;
-	position: relative;
+	align-content: center;
+	flex-wrap: wrap;
 	top: 9px;
 }
 .note {
 	display: flex;
+	justify-content: flex-start;
+	font-size: 13px;
+	margin-top: -5px;
 }
 .affichage{
     display: flex;
@@ -227,18 +272,20 @@ header {
 /* POPULAIRE*/
 
 .les_populaires {
-	background-color: salmon;
+	background-color:#f2f2f2;
 	display: flex;
 	flex-direction: column;
-	border-radius: 20px;
-	padding: 45px 38px 31px 45px;
-	max-width: 345px;
-	width: 100%;
-	border: 1px solid chartreuse;
-    margin-right: 40px;
+	border-radius: 20px 20px 20px 20px;
+	margin-bottom:40px;
+	margin-right: 30px;
+	width: 959px;
+	border:5px solid orange;
+}
+.fa-chart-line{
 }
 .les_populaires_aside {
-	border: 1px solid black;
+	margin-left: 20px;
+	margin-right: 20px;
 }
 
 .populaire {
@@ -252,30 +299,31 @@ header {
 }
 .les_populaires_aside_card {
 	display: flex;
-
 	width: 310px;
 	height: 120px;
+	margin-bottom: 20px;
 }
 .tarif {
 	padding: 7px 0px 7px 20px;
 	display: flex;
 	flex-direction: column;
-	border: 3px solid lawngreen;
 	justify-content: space-between;
+	margin: 15px;
 }
 .nom_hotel_pop {
 	font-size: 15px;
-	border: 1px solid blueviolet;
 }
 .prix_hotel_pop {
 	font-size: 10px;
-	border: 1px solid hotpink;
 	font-weight: bold;
+	margin-top: -8px;
 }
 /* SECTION 4*/
 
 #Activites {
 	display: flex;
+	justify-content:space-around;
+	border:5px solid orange
 }
 .titre {
 	margin-bottom: 27px;
@@ -290,17 +338,35 @@ header {
 	justify-content: space-between;
 	align-items: center;
 	object-fit: cover;
+	border: 5px solid red;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
 }
+
 .activite2 {
 	width: 300px;
 	height: 150px;
 	object-fit: cover;
 	display: flex;
 	flex-direction: column;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+	border:5px solid blue
+}
+
+.photo1{
+	border:5px solid greenyellow;
+
+}
+.photo2{
+	border: 5px solid magenta;
+
 }
 .lieux {
+	margin:7px;
 	font-size: 15px;
-	text-decoration: none;
+	text-decoration:none;
+	border: 5px solid fuchsia;
 }
 
 /*FOOTER*/
@@ -314,21 +380,21 @@ header {
 	justify-content: space-between;
 }
 .propos {
-	font-size: 13px;
+	font-size: 15px;
 }
 .propos_texte {
-	font-size: 10px;
-}
-.footer_hebergement {
 	font-size: 13px;
 }
+.footer_hebergement {
+	font-size: 15px;
+}
 .hebergements_footer {
-	font-size: 10px;
+	font-size: 13px;
 }
 .assistance {
 	margin-right: 250px;
-	font-size: 13px;
+	font-size: 15px;
 }
 .assistance_texte {
-	font-size: 10px;
+	font-size: 13px;
 }
