@@ -150,7 +150,6 @@ input{
     border-radius: 0px 20px 20px 0px;
     background-color: #0065FC;
     color: white;
-    font-size: 14px;
 	font-weight: bold;
 }
 
@@ -213,8 +212,8 @@ input{
 }
 .infos {
 	border: 1px solid white;
-	width: 245px;
-	height: 220px;
+	width: 240px;
+	height: 200px;
     background-color: white;
     border-radius: 15px;
     margin: 10px;
@@ -225,6 +224,7 @@ input{
 	font-weight: bolder;
     display: flex;
     justify-content: flex-start;
+	padding-left: 30px;
 }
 .images {
 	width: 236px;
@@ -255,18 +255,19 @@ input{
 	display: flex;
 	align-content: center;
 	flex-wrap: wrap;
-	top: 9px;
 }
 .note {
 	display: flex;
 	justify-content: flex-start;
 	font-size: 13px;
 	margin-top: -5px;
+	
 }
 .affichage{
     display: flex;
     justify-content: flex-start;
-    padding-top: 20px;
+    padding:30px;
+	font-weight: bold;
 }
 /* POPULAIRE*/
 
@@ -280,14 +281,9 @@ input{
 	width: 959px;
 	border:5px solid orange;
 }
-.titre_1{
-	
-}
-.fa-chart-line{
-	border:2px solid red
-}
 
 .les_populaires_aside {
+	
 	margin-left: 20px;
 	margin-right: 20px;
 }
@@ -303,9 +299,23 @@ input{
 }
 .les_populaires_aside_card {
 	display: flex;
+	border: 1px solid white;
+	width: 280px;
+	height: 130px;
+    background-color: white;
+    border-radius: 15px;
+    margin: 10px;
+	text-decoration: none;
 	width: 310px;
 	height: 120px;
 	margin-bottom: 20px;
+}
+.titre_1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+	padding-left:25px;
+   padding-right: 30px;
 }
 .tarif {
 	padding: 7px 0px 7px 20px;
@@ -316,18 +326,41 @@ input{
 }
 .nom_hotel_pop {
 	font-size: 15px;
+	margin-top:-25px;
+	margin-left: -20px;
+	padding-top: 15px;
+
 }
 .prix_hotel_pop {
 	font-size: 10px;
 	font-weight: bold;
-	margin-top: -8px;
+	margin-top: -30px;
+	margin-left: -20px;
+}
+.note_etoile_pop {
+	color: blue;
+	display: flex;
+	justify-content: flex-start;
+	margin-left: -20px;	
+}
+.note_populaire{
+	display: flex;
+	justify-content: flex-start;
+	align-items: baseline;
+	font-size: 13px;
+	margin-top: -5px;
+}
+.etoile_grise_pop {
+	color: gray;
+	display: flex;
+	align-content: center;
+	flex-wrap: wrap;	
 }
 /* SECTION 4*/
 
 #Activites {
 	display: flex;
 	justify-content:space-around;
-	border:5px solid orange
 }
 .titre {
 	margin-bottom: 27px;
@@ -342,7 +375,6 @@ input{
 	justify-content: space-between;
 	align-items: center;
 	object-fit: cover;
-	border: 5px solid red;
 	border-top-left-radius: 15px;
 	border-top-right-radius: 15px;
 }
@@ -355,24 +387,61 @@ input{
 	flex-direction: column;
 	border-top-left-radius: 15px;
 	border-top-right-radius: 15px;
-	border:5px solid blue
+	margin-bottom: 15px;
+}
+.activite3{
+	width: 300px;
+	height: 150px;
+	object-fit: cover;
+	display: flex;
+	flex-direction: column;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+	margin-top: 15px;
 }
 
-.photo1{
-	border:5px solid greenyellow;
-
-}
-.photo2{
-	border: 5px solid magenta;
-
-}
-.lieux {
-	margin:7px;
+.lieux_1 {
+	margin-top: 0px;
 	font-size: 15px;
-	text-decoration:none;
-	border: 5px solid fuchsia;
+	box-shadow: 1px 1px 15px #f2f2f2;
+	border: 1px solid #f2f2f2;
+	width:220px;
+	height: 30px;
+	border-bottom-left-radius: 15px;
+	border-bottom-right-radius: 15px;
+	font-weight: bold;
+	
 }
-
+.lieux_2{
+	margin-top: 0px;
+	font-size: 15px;
+	box-shadow: 1px 1px 15px #f2f2f2;
+	border: 1px solid #f2f2f2;
+	width:300px;
+	height: 30px;
+	border-bottom-left-radius: 15px;
+	border-bottom-right-radius: 15px;
+	
+}
+.nom_hotel_1{
+	text-decoration: none;
+	margin:auto 20px;
+	color: black;
+	font-size: 11px;
+	border:5px solid red
+}
+.nom_hotel_2{
+	text-decoration: none;
+	margin:auto 20px;
+	border:5px solid blue;
+	color: black;
+	font-size: 11px;
+	font-weight: bold;
+}
+.ensemble_photo{
+	margin: 20px;
+	border:5px solid violet
+}
 /*FOOTER*/
 
 .pied_page {
@@ -382,9 +451,11 @@ input{
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
+	padding-top: 15px;
 }
 .propos {
 	font-size: 15px;
+	padding-left: 15px;
 }
 .propos_texte {
 	font-size: 13px;
