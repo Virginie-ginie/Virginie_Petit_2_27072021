@@ -9,7 +9,7 @@ body {
 	margin: 0%;
 	padding: 0%;
 }
-/*HEADER*/ /* NE PAS TOUCHER AU HEADER*/
+/*HEADER*/ 
 header {
 	display: flex;
 	flex-direction: row;
@@ -183,6 +183,7 @@ header {
 .image_heberg_pop_activite{
 	text-decoration: none;
 	color: initial;
+	border:3px solid violet;
 }
 .main {
 	display: flex;
@@ -193,13 +194,15 @@ header {
 	width: 1300px;
 	padding:10px;
 	height: 500px;
+	border:3px solid red;
 }
 .hebergement {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
     padding-right:0px 30px 0px 15px;
-	margin-left: 15px;    
+	margin-left: 15px; 
+	border: 3px solid blue   
 }
 .infos {
 	border: 1px solid white;
