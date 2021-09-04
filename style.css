@@ -6,15 +6,12 @@ html {
 }
 body {
 	box-sizing: border-box;
-	margin: 0%;
-	padding: 0%;
 }
 /*HEADER*/ 
-header {
-	display: flex;
+header{
 	flex-direction: row;
 	justify-content: space-between;
-	width: 100%;
+	display: flex;
 }
 .logo {
 	width: 100px;
@@ -28,14 +25,18 @@ header {
 	margin: 10px;
 	display: flex;
 	justify-content: flex-end;
-	padding: 50px;
+	padding: 10px;
+}
+.barre_navigation{
+	display: flex;
+	padding-top: 5%;
 }
 .nav {
 	list-style: none;
 	padding: 0;
 	word-spacing: 15px;
 }
-.navigation a:hover{
+.nav a:hover{
 	border-top :2px solid #0065FC ;
     color:#0065FC ;
 	font-weight: bold;
@@ -88,9 +89,13 @@ header {
 	display: flex;
 	flex-wrap: wrap;
 	padding-right:-50px;
+	padding-bottom: 25px;
+}
+.logements{
+	padding-left: 10px;
 }
 .logo_i{
-	background-color: #f2f2f2;
+
 	font-size: 10px;
 	border:1px solid #F2F2F2;
 	display :inline-block;
@@ -102,9 +107,6 @@ header {
 	margin-left: 160px;
 	text-align: center;
 	line-height: 2px;
-}
-.logements{
-	padding-bottom: 25px;
 }
 .sous_titre_menu{
 	margin-bottom: 15px;
@@ -143,14 +145,14 @@ header {
 	border-left: 0px ;
 	border-radius:0 25px 25px 0;
 	background-color: white;
-	margin: 15px;
+	margin-top: 15px;
+	margin-left: -20px;
+	margin-right: 15px;
 	font-weight: bold;
 	height: 40px;
 	align-content: center;
-	flex-wrap:wrap;
-    justify-content: space-around;
-	padding-right: 30px;
-	margin: 0px 30px 0px 10px;
+	padding-right: 10px;
+	z-index:1;
 }
 .recherche {
 	height: 40px;
@@ -168,14 +170,16 @@ header {
 	border: 1px solid #deebff;
 	border-radius: 100%;
 	color: #0065fc;
-	padding: 10px;
+	padding: 10px 18px 20px  8px;
+	z-index:2;
 	font-size: 20px;
-	margin-left: -30px;
-	width: 25px;
+	margin-top: 17px;
+	width: 10px;
+	height: 5px;
 }
 /*SECTION 3*/
 #hebergement_et_populaire {
-	display: flex;
+	display:flex;
 	justify-content: space-between;
 	margin-bottom: 40px;
 	margin:40px;
@@ -183,7 +187,6 @@ header {
 .image_heberg_pop_activite{
 	text-decoration: none;
 	color: initial;
-	border:3px solid violet;
 }
 .main {
 	display: flex;
@@ -191,26 +194,26 @@ header {
 	border-radius: 20px 20px 20px 20px;
 	background-color:#f2f2f2;
 	margin:0px 50px 40px 120px ;
-	width: 1300px;
+	width: 850px;
 	padding:10px;
 	height: 500px;
-	border:3px solid red;
 }
 .hebergement {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
-    padding-right:0px 30px 0px 15px;
+    padding-right: 10px;
 	margin-left: 15px; 
-	border: 3px solid blue   
+	width: 800px;
 }
 .infos {
 	border: 1px solid white;
-	width: 223px;
+	width: 220px;
 	height: 170px;
     background-color: white;
     border-radius: 15px;
-    margin: 20px 10px 10px 30px;
+    margin: 10px;
+	padding-right: 20px;
 	text-decoration: none;
 }
 .titre {
@@ -222,14 +225,14 @@ header {
 	padding:0px 0px -50px 80px;
 }
 .images {
-	width: 210px;
+	width: 230px;
 	height: 112px;
 	border: 1px solid white;
 	object-fit: cover;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
-	margin:1px 1px 1px 3px;
-	padding: 3px 0px 0px 3px;
+	margin:2px 1px 1px 1px;
+	padding: 1px 0px 0px 1px;
 }
 .nom_hotel {
 	font-size: 15px;
@@ -276,9 +279,11 @@ header {
 	border-radius: 20px 20px 20px 20px;
 	margin:0px 30px 40px 10px ;
 	width: 348px;	
+	order:2;
 }
 .les_populaires_aside {
 	margin:0px 20px 0px 20px;
+
 }
 .populaire {
 	height: 100px;
@@ -388,15 +393,13 @@ header {
 	display: flex;
 	flex-direction: column;
 	text-align:start;
+	margin-left: -90px;
 }
 .lieux_bold{
 	font-weight: bold;
 }
-.lieux_margin{
-	margin-left: -90px;
-}
 .lieux_1 {
-	margin-left: 50px;	
+	margin-left: 50px;
 }
 .nom_hotel_activite{
 	margin:auto 20px;
@@ -405,7 +408,7 @@ header {
 	font-weight:bold;
 }
 /*FOOTER*/
-.pied_page {
+footer {
 	margin: 0px 0px 0px 170px;
 	background-color: #f2f2f2;
 	display: flex;
@@ -419,21 +422,15 @@ header {
 	font-size: 15px;
 	padding: 20px 50px 50px 50px;
 }
-.propos_texte {
+.texte_footer {
 	font-size: 13px;
 }
 .footer_hebergement {
 	font-size: 15px;
 	padding: 20px 200px 200px 200px;
 }
-.hebergements_footer {
-	font-size: 13px;
-}
 .assistance {
 	margin-right: 250px;
 	font-size: 15px;
 	padding:20px 60px 60px 60px;
-}
-.assistance_texte {
-	font-size: 13px;
 }
