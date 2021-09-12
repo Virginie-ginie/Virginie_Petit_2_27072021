@@ -17,7 +17,8 @@ header{
 .logo {
 	width: 100px;
 	height: auto;
-	margin: 40px;
+	margin-left: 80px;
+	margin-bottom: 50px;
 	display: flex;
 	padding-bottom: 10px;
 }
@@ -27,13 +28,13 @@ header{
 .barre_navigation{
 	display: inline-flex;
 	padding-top: 5%;
+	margin-right: 50px;
 }
 .nav {
 	list-style: none;
 	word-spacing: 15px;
 }
 .nav a:hover{
-	border-top :2px solid #0065FC ;
     color:#0065FC ;
 	font-weight: bold;
 }
@@ -63,16 +64,16 @@ header{
 .titre-recherche {
 	font-size: 100%;
 	font-weight: bolder;
-	margin: -15px 0px 0px 40px;
+	margin: -15px 0px 0px 80px;
 }
 .complement {
 	font-size: 80%;
-	margin-left: 40px;
+	margin-left: 80px;
 }
 .barrerecherche {
 	display:flex;
 	height: 40px;
-	margin-left: 40px;
+	margin-left:80px;
 	margin-bottom:20px ;
 }
 .barre_search{
@@ -107,11 +108,11 @@ header{
 	height: 10px;
 	color: #0065fc;
 	padding:10px;
-	margin-left: 40px;
+	margin-left: 80px;
 	text-align: center;	
 }
 .filtre {
-	margin: 15px 0px 1px 40px;
+	margin: 15px 0px 1px 80px;
 	font-weight: bold;
 	display: flex;
 	background-color: white;
@@ -122,8 +123,8 @@ header{
 }
 .icone{
 	display: flex;
-	width: 16%;	
-	/*margin-left:-20px;*/
+	width: 15%;
+	margin-right:-50px;
 }
 .icone i{
 	background-color: #deebff;
@@ -132,11 +133,11 @@ header{
 	color: #0065fc;
 	margin:15px -30px 15px 15px;
 	padding:10px 20px 20px 10px;
-	height: 15px;
-	width: 15px;
-	font-size:24px;
+	height: 18px;
+	width: 18px;
+	font-size:20px;
 	z-index: 2;
-	text-align: center;
+	align-items: center;
 }
 .icone p {
 	border: 3px solid #F2F2F2;
@@ -187,10 +188,8 @@ header{
 /*SECTION 3*/
 #hebergement_et_populaire {
 	display:flex;
-	justify-content: space-between;
-	margin-bottom: 40px;
+	margin: 30px 0px 40px 80px;
 	width: 89%;
-	margin-left: 40px;
 }
 .image_heberg_pop_activite{
 	text-decoration: none;
@@ -288,7 +287,7 @@ header{
 	flex-direction: column;
 	justify-content: center;
 	border-radius: 20px 20px 20px 20px;
-	margin:0px 0px 0 40px;
+	margin:0px 0px 0 80px;
 	padding-bottom: 20px;
     width: 40%;
 	height: 510px;
@@ -364,7 +363,7 @@ header{
 .titre_activite {
 	margin-bottom: 27px;
 	font-size: large;
-	margin-left:40px;
+	margin-left:80px;
 }
 .figure_activite{
 	margin: 0px;
@@ -379,6 +378,7 @@ header{
 	justify-content: space-between;
 	align-items: center;
 	margin-right: 30px;
+	margin-left: 40px;
 	border-top-left-radius: 15px;
 	border-top-right-radius: 15px;
 	-webkit-box-shadow: 0 5px 40px -20px black;
@@ -406,7 +406,8 @@ header{
 	flex-wrap: wrap;
 	justify-content: space-between;
 	align-items: center;
-	margin-right: 30px;
+	margin-right: 20px;
+	margin-left: 20px;
 	box-shadow: 1px 1px 15px #f2f2f2;
 	border-top-left-radius: 15px;
 	border-top-right-radius: 15px;
@@ -419,6 +420,7 @@ header{
 		font-weight:bold;
 		width: 290px;
 		height: 50px;
+		margin-left: 40px;
 		display: flex;
 		flex-direction: column;
 		border-bottom-left-radius: 15px;
@@ -471,6 +473,7 @@ header{
 		font-weight:bold;
 		width: 290px;
 		height: 50px;
+		margin-left: 20px;
 		display: flex;
 		flex-direction: column;	
 		border-bottom-left-radius: 15px;
@@ -486,7 +489,7 @@ header{
 }
 /*FOOTER*/
 footer {
-	margin-top: 40px;
+	margin-top: 80px;
 	background-color: #f2f2f2;
 	display: flex;
 	flex-wrap: wrap;
@@ -503,12 +506,12 @@ footer {
 }
 .footer_hebergement {
 	font-size: 15px;
-	padding: 20px 200px 0px 230px;
+	padding: 20px 200px 0px 280px;
 }
 .assistance {
 	
 	font-size: 15px;
-	padding:20px 90px 0px 80px;
+	padding:20px 90px 0px 100px;
 }/*
 @media screen and (max-width:1300px){
 	body{
