@@ -3,19 +3,16 @@ html {
 	font-family: "Raleway", sans-serif;
 	margin: 0%;
 	padding:0%;
+
 }
 body {
-	width:100%;
 	box-sizing: border-box;
-	border:2px solid red
 }
 /*HEADER*/ 
 header{
 	flex-direction: row;
 	justify-content: space-between;
 	display: flex;
-	max-width: 1440px
-	border:2px solid blue
 }
 .logo {
 	width: 100px;
@@ -23,21 +20,16 @@ header{
 	margin: 40px;
 	display: flex;
 	padding-bottom: 10px;
-	border:3px solid violet
 }
 .navigation {
 	display: inline-flex;
-	margin-right: 250px;
-	border:3px solid black;
 }
 .barre_navigation{
 	display: inline-flex;
 	padding-top: 5%;
-	border:3px solid red
 }
 .nav {
 	list-style: none;
-	padding: 0;
 	word-spacing: 15px;
 }
 .nav a:hover{
@@ -47,24 +39,22 @@ header{
 }
 .navig1 {
 	width: 110px;
-	height: 35px;
-    margin: 30px 40px 0px 0px;
-	padding: 44px 0px 0px 0px;
+    margin: 30px 50px 0px 0px;
+	padding-top: 44px;
 	text-decoration: none;
 	border-width: 2px;
 	color:black
 }
 .navig2 {
 	width: 69px;
-	height: 80px;
-	margin-right: 50px;
+	margin-right: 30px;
 	text-decoration: none;
 	padding-top: 44px;
 	color:black;
 }
 .navig3 {
 	text-decoration: none;
-	margin: 10px;
+	margin: 50px;
 	padding-top: 44px;
 	color:#0065FC;
 	font-weight: bold;
@@ -81,7 +71,6 @@ header{
 }
 .barrerecherche {
 	display:flex;
-	width: 100%;
 	height: 40px;
 	margin-left: 40px;
 	margin-bottom:20px ;
@@ -109,7 +98,6 @@ header{
 	padding-right:-50px;
 	padding-bottom: 25px;
 }
-
 .logo_i{
     font-size: 10px;
 	border:1px solid #F2F2F2;
@@ -122,7 +110,6 @@ header{
 	margin-left: 40px;
 	text-align: center;	
 }
-
 .filtre {
 	margin: 15px 0px 1px 40px;
 	font-weight: bold;
@@ -135,36 +122,46 @@ header{
 }
 .icone{
 	display: flex;
-	border:2px solid black;
-	width: auto;	
+	width: 16%;	
+	/*margin-left:-20px;*/
 }
 .icone i{
 	background-color: #deebff;
 	border: 1px solid #deebff;
 	border-radius: 100%;
 	color: #0065fc;
-	margin:12px -12px 15px 20px;
-	padding:10px 10px 13px 10px;
+	margin:15px -30px 15px 15px;
+	padding:10px 20px 20px 10px;
 	height: 15px;
-	width: auto;
-	font-size:15px;
+	width: 15px;
+	font-size:24px;
 	z-index: 2;
 	text-align: center;
-	border:3px solid red;
 }
 .icone p {
 	border: 3px solid #F2F2F2;
-	border-left: 0px ;
 	border-radius:0 25px 25px 0;
 	background-color: white;
 	color:black;
 	font-weight: bold;
-	margin:15px 15px 20px 0px;
-	padding: 15px 20px 0px 10px;
-	height: 20px;
-	font-size: 12px;
 	text-align: center;
-	border:3px solid violet;
+	font-size: 13px;
+}
+.eco{
+	width: 120px;
+	padding:15px 0px 5px 15px;s
+}
+.famille{
+	width: 110px;
+	padding:15px 0px 5px 3px;
+}
+.romantique{
+	width: 120px;
+	padding:15px 0px 5px 10px
+}
+.animaux{
+	width: 150px;
+	padding:15px 0px 5px 15px
 }
 .icone_map{
 	background-color: #f2f2f2;
@@ -175,9 +172,7 @@ header{
     width: 40px;
 	text-align: center;
 	line-height:3;
-	border:3px solid orange
 }
-
 .recherche {
 	height: 50px;
     width: 120px;
@@ -189,7 +184,6 @@ header{
     color: white;
 	font-weight: bold;
 }
-
 /*SECTION 3*/
 #hebergement_et_populaire {
 	display:flex;
@@ -197,8 +191,6 @@ header{
 	margin-bottom: 40px;
 	width: 89%;
 	margin-left: 40px;
-	padding-right:-20px ;
-	border:2px solid blue
 }
 .image_heberg_pop_activite{
 	text-decoration: none;
@@ -210,22 +202,20 @@ header{
 	border-radius: 20px 20px 20px 20px;
 	background-color:#f2f2f2;
 	width: 60%;
-	padding:10px 0 10px 5px;
+	padding:20px 0 20px 5px;
 	height: 490px;
-	border:2px solid green
 }
 .hebergement {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
 	margin:auto; 
-	width: 800px;
+	width: 100%;
 	height: 400px;
-	border:2px solid yellow
 }
 .infos {
 	border: 1px solid white;
-	width: 223px;
+	width: 27%;
 	height: 169px;
     background-color: white;
     border-radius: 15px;
@@ -233,7 +223,6 @@ header{
 	margin-left:10px ;
 	padding:4px 5px 0 4px;
 	text-decoration: none;
-	border:2px solid black
 }
 .titre {
 	font-size: 100%;
@@ -241,7 +230,7 @@ header{
     display: flex;
     justify-content: flex-start;
 	margin-left: 30px;
-	padding:0px 0px -50px 80px;
+	padding:0px 10px 0px 15px;
 }
 .figure{
 	width: 100%;
@@ -256,7 +245,7 @@ header{
     border-top-right-radius: 15px;
 }
 .nom_hotel {
-	font-size: 13px;
+	font-size: 12px;
 	font-weight: bold;
 	display: flex;
 	justify-content: flex-start;
@@ -299,20 +288,16 @@ header{
 	flex-direction: column;
 	justify-content: center;
 	border-radius: 20px 20px 20px 20px;
-	margin:0px 300px 0 40px;
+	margin:0px 0px 0 40px;
+	padding-bottom: 20px;
     width: 40%;
 	height: 510px;
 	order:2;
-	border:2px solid silver
-}
-.les_populaires_aside {
-	width: auto;
-	border:2px solid red
 }
 .populaire {
-	height: 85px;
+	height: 95px;
 	width:130px;
-	margin-left:-35px;
+	margin-left: -35px;
 	margin-top:-10px;
 	margin-bottom:30px;
 	object-fit: cover;
@@ -320,25 +305,25 @@ header{
 	border-bottom-left-radius: 10px;
 	display: flex;
 	flex-direction: column;
-	/*border:2px solid yellow*/
+}
+.derniere_photo{
+	width: 130px;
 }
 .les_populaires_aside_card {
 	display: flex;
+	margin:20px auto;
 	border: 1px solid white;
-	width: 300px;
-	height: 100px;
+	width:85%;
+	height: 110px;
     background-color: white;
     border-radius: 15px;
-    margin:0px 15px 40px 15px;
 	text-decoration: none;
-	border:2px solid blue
 }
 .titre_1{
     display: flex;
     justify-content: space-between;
     align-items: center;
 	padding:0px 30px 0px 25px;
-	border:2px solid brown
 }
 .tarif {
 	padding: 7px 0px 7px 0px;
@@ -347,16 +332,15 @@ header{
 	justify-content: space-between;
 	margin: 5px;
 	width:40%;
-	/*border:2px solid black*/
 }
 .nom_hotel_pop {
-	font-size: 13px;
+	font-size: 12px;
 	margin:-20px 0px 0px -20px;
 	padding-top: 15px;
 }
 .prix_hotel_pop {
 	font-size: 12px;
-	margin: -18px 0px 0px -20px;
+	margin: -30px 0px 0px -20px;
 }
 .note_etoile_pop {
 	color: blue;
@@ -376,7 +360,6 @@ header{
 	width: 60%;
 	display: flex;
 	padding-left:40px;
-	
 }
 .titre_activite {
 	margin-bottom: 27px;
@@ -387,22 +370,15 @@ header{
 	margin: 0px;
 	padding:0px
 }
-.photo1{
-	margin-left: 20px;
-	margin-right: 30px;
-}
-.photo2{
-	margin-right: 30px;
-}
 .image_activite_vieuxport{
-	width: 250px;
+	width: 290px;
 	display: flex;
 	object-fit: cover;
 	height: 335px;
 	flex-wrap: wrap;
 	justify-content: space-between;
 	align-items: center;
-	margin-left: 5px;
+	margin-right: 30px;
 	border-top-left-radius: 15px;
 	border-top-right-radius: 15px;
 	-webkit-box-shadow: 0 5px 40px -20px black;
@@ -411,38 +387,38 @@ header{
 }
 .images_4_identitques{
 	font-size: 15px;
-	width:250px;
+	width:290px;
 	height: 125px;
+	margin-right: 30px;
 	border-top-left-radius: 15px;
 	border-top-right-radius: 15px;
 	-webkit-box-shadow: 0 5px 40px -20px black;
     -moz-box-shadow: 0 5px 40px -20px black;
     box-shadow: 0 5px 40px -20px black;
-	margin-left: 20px;
+	margin-left: 30px;
 	object-fit: cover;
 }
 .image_parc{
-	width:250px;
+	width:290px;
 	display: flex;
 	object-fit: cover;
 	height: 335px;
 	flex-wrap: wrap;
 	justify-content: space-between;
 	align-items: center;
+	margin-right: 30px;
 	box-shadow: 1px 1px 15px #f2f2f2;
 	border-top-left-radius: 15px;
 	border-top-right-radius: 15px;
 	-webkit-box-shadow: 0 5px 40px -20px black;
     -moz-box-shadow: 0 5px 40px -20px black;
-	margin-right:20px;
 }
 .nom_vieux_port{
 	    color: black;
 		font-size: 15px;
 		font-weight:bold;
-		width: 250px;
+		width: 290px;
 		height: 50px;
-		margin-left: 4px;
 		display: flex;
 		flex-direction: column;
 		border-bottom-left-radius: 15px;
@@ -451,7 +427,6 @@ header{
 		border: 1px solid #f2f2f2;
 		-webkit-box-shadow: 0 5px 40px -20px black;
         -moz-box-shadow: 0 5px 40px -20px black;
-		
 }
 .noms_2_identitques{
 	    color: black;
@@ -459,18 +434,17 @@ header{
 		font-weight:bold;
 		box-shadow: 1px 1px 15px #f2f2f2;
 		border: 1px solid #f2f2f2;
-		width: 250px;
+		width: 290px;
 		height: 50px;
 		display: flex;
 		flex-direction: column;
-		margin-left: 20px;
 		margin-bottom: 30px;
 		border-bottom-left-radius: 15px;
 		border-bottom-right-radius: 15px;
 		-webkit-box-shadow: 0 5px 40px -20px black;
         -moz-box-shadow: 0 5px 40px -20px black;
 		margin-top:-4px;
-		
+		margin-left: 30px;	
 }
 .noms_2_derniers_identitques{
 	    color: black;
@@ -478,11 +452,11 @@ header{
 		font-weight:bold;
 		box-shadow: 1px 1px 15px #f2f2f2;
 		border: 1px solid #f2f2f2;
-		width: 250px;
+		width: 290px;
 		height: 50px;
 		display: flex;
 		flex-direction: column;
-		margin-left:20px;
+		margin-left:30px;
 		margin-bottom: 30px;
 		border-bottom-left-radius: 15px;
 		border-bottom-right-radius: 15px;
@@ -495,7 +469,7 @@ header{
 	    color: black;
 		font-size: 15px;
 		font-weight:bold;
-		width: 248px;
+		width: 290px;
 		height: 50px;
 		display: flex;
 		flex-direction: column;	
@@ -508,11 +482,11 @@ header{
 }
 .nom_hotel_activite{
 	margin-left: 20px;
-	margin-top:15px
+	margin-top:15px;
 }
 /*FOOTER*/
 footer {
-	margin: 40px 0px 0px 0px;
+	margin-top: 40px;
 	background-color: #f2f2f2;
 	display: flex;
 	flex-wrap: wrap;
@@ -522,19 +496,19 @@ footer {
 }
 .propos {
 	font-size: 15px;
-	padding: 20px 50px 50px 50px;
+	padding: 20px 50px 0px 50px;
 }
 .texte_footer {
 	font-size: 13px;
 }
 .footer_hebergement {
 	font-size: 15px;
-	padding: 20px 200px 200px 200px;
+	padding: 20px 200px 0px 230px;
 }
 .assistance {
-	margin-right: 200px;
+	
 	font-size: 15px;
-	padding:20px 60px 60px 60px;
+	padding:20px 90px 0px 80px;
 }/*
 @media screen and (max-width:1300px){
 	body{
