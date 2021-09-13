@@ -93,10 +93,9 @@ header{
 	line-height: 2px;
 }
 .menu {
-	width: 100%;
+
 	display: flex;
 	flex-wrap: wrap;
-	padding-right:-50px;
 	padding-bottom: 25px;
 }
 .logo_i{
@@ -117,8 +116,8 @@ header{
 	display: flex;
 	background-color: white;
 	border: 1px solid white;
-	border-radius:15px ;
-	font-size: 15px;
+	border-radius:15px;
+	font-size:15px;
 	padding:10px;
 }
 .icone{
@@ -150,7 +149,7 @@ header{
 }
 .eco{
 	width: 120px;
-	padding:15px 0px 5px 15px;s
+	padding:15px 0px 5px 15px;
 }
 .famille{
 	width: 110px;
@@ -158,11 +157,11 @@ header{
 }
 .romantique{
 	width: 120px;
-	padding:15px 0px 5px 10px
+	padding:15px 0px 5px 10px;
 }
 .animaux{
 	width: 150px;
-	padding:15px 0px 5px 15px
+	padding:15px 0px 5px 15px;
 }
 .icone_map{
 	background-color: #f2f2f2;
@@ -263,7 +262,6 @@ header{
 	display: flex;
 	justify-content: flex-start;
 	padding-left:10px;
-	justify-content: baseline;
 }
 .etoile_grise {
 	color:#f2f2f2;
@@ -294,11 +292,11 @@ header{
 	order:2;
 }
 .populaire {
-	height: 95px;
+	height: 105px;
 	width:130px;
 	margin-left: -35px;
 	margin-top:-10px;
-	margin-bottom:30px;
+	margin-bottom:10px;
 	object-fit: cover;
 	border-top-left-radius:10px;
 	border-bottom-left-radius: 10px;
@@ -310,10 +308,12 @@ header{
 }
 .les_populaires_aside_card {
 	display: flex;
-	margin:20px auto;
 	border: 1px solid white;
 	width:85%;
-	height: 110px;
+	margin-bottom:20px;
+	margin-left: auto;
+	margin-right: auto;
+	height: 120px;
     background-color: white;
     border-radius: 15px;
 	text-decoration: none;
@@ -324,28 +324,32 @@ header{
     align-items: center;
 	padding:0px 30px 0px 25px;
 }
+.figure_pop{
+	margin-bottom: 0px;
+}
 .tarif {
-	padding: 7px 0px 7px 0px;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	margin: 5px;
-	width:40%;
+	margin-left: 110px;
+	margin-top: -120px;
+	width:70%;
+	height: 80px;
 }
 .nom_hotel_pop {
 	font-size: 12px;
-	margin:-20px 0px 0px -20px;
-	padding-top: 15px;
+	width: 50%;
+	margin-bottom: 5px;
 }
 .prix_hotel_pop {
 	font-size: 12px;
-	margin: -30px 0px 0px -20px;
+	margin: 5px 0px 40px 0px;
 }
 .note_etoile_pop {
 	color: blue;
 	display: flex;
 	justify-content: flex-start;
-	margin-left: -20px;	
+	margin-right:100px;	
 }
 .note_populaire{
 	display: flex;
@@ -356,9 +360,14 @@ header{
 }
 /* SECTION 4*/
 #Activites {
-	width: 60%;
 	display: flex;
 	padding-left:40px;
+}
+.photo2{
+	margin-top:70px
+}
+.photo3{
+	margin-top:70px
 }
 .titre_activite {
 	margin-bottom: 27px;
@@ -367,7 +376,7 @@ header{
 }
 .figure_activite{
 	margin: 0px;
-	padding:0px
+	padding:0px;
 }
 .image_activite_vieuxport{
 	width: 290px;
@@ -495,7 +504,7 @@ footer {
 	flex-wrap: wrap;
 	justify-content: flex-start;
 	height: 150px;
-	width: 100%;
+	
 }
 .propos {
 	font-size: 15px;
