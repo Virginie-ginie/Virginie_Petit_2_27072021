@@ -17,7 +17,7 @@ header{
 .logo {
 	width: 100px;
 	height: auto;
-	margin-left: 80px;
+	margin-left: 40px;
 	margin-bottom: 50px;
 	display: flex;
 	padding-bottom: 10px;
@@ -37,6 +37,7 @@ header{
 .nav a:hover{
     color:#0065FC ;
 	font-weight: bold;
+	border-top:2px solid blue
 }
 .navig1 {
 	width: 110px;
@@ -74,7 +75,7 @@ header{
 	display:flex;
 	height: 40px;
 	margin-left:80px;
-	margin-bottom:20px ;
+	margin-bottom:20px;
 }
 .barre_search{
 	border:3px solid #f2f2f2;
@@ -93,9 +94,9 @@ header{
 	line-height: 2px;
 }
 .menu {
-
 	display: flex;
 	flex-wrap: wrap;
+	padding-top:15px;
 	padding-bottom: 25px;
 }
 .logo_i{
@@ -111,7 +112,7 @@ header{
 	text-align: center;	
 }
 .filtre {
-	margin: 15px 0px 1px 80px;
+	margin: 15px 20px 1px 80px;
 	font-weight: bold;
 	display: flex;
 	background-color: white;
@@ -122,48 +123,41 @@ header{
 }
 .icone{
 	display: flex;
-	width: 15%;
-	margin-right:-50px;
+	width: 180px;
+	margin-right:50px;
+	height:50px;
+	align-items: center;
+	border-top:3px solid #f2f2f2;
+	border-bottom: 3px solid #f2f2f2;
+	border-right: 3px solid #f2f2f2;
+	border-radius:0 25px 25px 0;
 }
 .icone i{
 	background-color: #deebff;
-	border: 1px solid #deebff;
 	border-radius: 100%;
 	color: #0065fc;
-	margin:15px -30px 15px 15px;
-	padding:10px 20px 20px 10px;
-	height: 18px;
-	width: 18px;
+	padding:18px;
 	font-size:20px;
-	z-index: 2;
-	align-items: center;
+	margin-left: -20px;
 }
 .icone p {
-	border: 3px solid #F2F2F2;
-	border-radius:0 25px 25px 0;
-	background-color: white;
 	color:black;
 	font-weight: bold;
-	text-align: center;
+	padding-left: 10px;
+	padding-right: 10px;
 	font-size: 13px;
 }
-.eco{
-	width: 120px;
-	padding:15px 0px 5px 15px;
+.contenaire_buttons_filtre{
+	display: flex;
 }
-.famille{
-	width: 110px;
-	padding:15px 0px 5px 3px;
-}
-.romantique{
-	width: 120px;
-	padding:15px 0px 5px 10px;
+.contenaire_buttons_filtre >*{
+	width: 100%;
+	padding-right: 10px;
 }
 .animaux{
-	width: 150px;
-	padding:15px 0px 5px 15px;
+	width: 190px;
 }
-.icone_map{
+i.icone_map{
 	background-color: #f2f2f2;
 	border: 2px solid #f2f2f2;
 	border-bottom-left-radius: 15px;
@@ -227,7 +221,6 @@ header{
 	font-weight: bolder;
     display: flex;
     justify-content: flex-start;
-	margin-left: 30px;
 	padding:0px 10px 0px 15px;
 }
 .figure{
@@ -318,11 +311,14 @@ header{
     border-radius: 15px;
 	text-decoration: none;
 }
+.graphique{
+	margin-right: 40px;
+}
 .titre_1{
     display: flex;
     justify-content: space-between;
     align-items: center;
-	padding:0px 30px 0px 25px;
+	padding:0px 0px 0px 45px;
 }
 .figure_pop{
 	margin-bottom: 0px;
@@ -372,7 +368,7 @@ header{
 .titre_activite {
 	margin-bottom: 27px;
 	font-size: large;
-	margin-left:80px;
+	margin-left:50px;
 }
 .figure_activite{
 	margin: 0px;
@@ -521,16 +517,189 @@ footer {
 	
 	font-size: 15px;
 	padding:20px 90px 0px 100px;
-}/*
-@media screen and (max-width:1300px){
+}
+@media screen and (min-width:320px) and (max-width:1300px)
+{
 	body{
-
 		width: 100%;
 	}
-	
 	header{
 		flex-direction: column;
 		display: flex;
-	
+		background-color: aqua;
 	}
-}*/
+	.logo {
+		margin-left: 40px;
+		margin-top:50px;
+		border:2px solid black
+	}
+	.barre_navigation {
+		margin:-50px 40px 40px 0px; 
+		display: block;
+		width: 50%;
+		border:2px solid violet
+	}
+	.nav a:hover{
+		border-bottom :2px solid #0065FC ;
+		color:#0065FC ;
+		font-weight: bold;
+		padding-top: 5px;
+	}
+	.navig1 {
+		margin: -70px 50px 0px 20px;
+		border-bottom: 2px solid #f2f2f2;
+		padding-left: 50px;
+		padding-right: 50px;
+		padding-bottom: 15px;
+		border:2px solid red
+	}
+	.navig2 {
+		border-bottom: 2px solid #f2f2f2;
+		margin-top: -200px;
+		margin-left: 260px;
+		padding-bottom: 10px;
+		border:2px solid blue
+	}
+	.navig3 {
+		margin-top: -190px;
+		margin-left: 330px;
+		padding-bottom: 10px;
+		color:#0065FC;
+		display: flex;
+		justify-content: flex-start;
+		border:2px solid yellow
+	}
+	/* SECTION 2*/
+	.titre-recherche {
+		font-size: 30px;
+		width: 400px;
+		font-weight: bolder;
+		margin: -15px 0px 0px 80px;
+	}
+	.complement {
+		margin-left: 80px;
+		font-size: 20px;
+	}
+	.filtre {
+		margin: 0px 15px 1px 80px;
+		font-size: 20px;
+		display:inline-block;
+	}
+	.menu{
+		display: inline-block
+	}
+	.icone{
+		margin-left: 80px;
+		padding-right: 10px;
+		margin-bottom: 10px;
+	}
+	.icone p{
+		margin-top: 15px;
+		font-size: 18px;
+	}
+	.icone i{
+		display: inline;
+		flex-direction: column;
+	}
+	.contenaire_buttons_filtre{
+		display: flex;
+	}
+	.contenaire_buttons_filtre >*{
+		width: 100%;
+	}
+	/*SECTION 3*/
+	#hebergement_et_populaire {
+		flex-direction: column-reverse;
+		margin: 30px 0px 0px 5px;
+		width: 89%;
+	}
+	.main {
+
+	background-color: white;
+	width: 40%;
+	padding:0px 0 20px 5px;
+	margin-left: 75px;
+	height: 100%;
+	}
+	.hebergement {
+ 	 flex-direction: column;
+ 	 flex-wrap: nowrap;
+	}
+	.infos {
+	width: 80%;
+	height: 190px;
+	margin-left: 20px;
+	margin-bottom: 15px;
+	box-shadow: 1px 1px 15px #f2f2f2;
+	}
+	.images {
+	width: 100%;
+	height: 110px;
+	}
+	.note {
+	display: flex;
+	justify-content: flex-start;
+	font-size: 13px;
+	margin-bottom: 10px;
+	}
+	.affichage{
+	margin-top:900px
+	}
+	/* SECTION 4*/
+	#Activites {
+	flex-direction: column;
+	padding-left:53px;
+	width: 30%;
+	}
+	.photo2{
+	margin-top:20px;
+	margin-left: 5px;
+	}
+	.photo3{
+	margin-top:20px;
+	margin-left: 10px;
+	}
+	.image_activite_vieuxport{
+	height: 130px;
+	width: 310px;
+	}
+	.images_4_identitques{
+	width: 310px;
+	height: 130px;
+	}
+	.image_parc{
+	height: 130px;
+	width: 310px;
+	margin-left: 25px;
+	margin-top:-25px
+	}
+	.nom_vieux_port{
+	width: 310px;
+	}
+	.noms_2_identitques{
+		width: 310px;
+	}
+	.noms_2_derniers_identitques{
+		width: 310px;
+	}
+	.nom_parc{
+		width: 310px
+	}
+	/*FOOTER*/
+	footer {
+	flex-direction: column;
+	height: auto;
+	width: 300px;
+	margin-left: 90px;
+	margin-top:5px
+	}
+	.propos {
+	padding-left:20px;
+	}
+	.footer_hebergement{
+	padding-left:20px;
+	}
+	.assistance {
+	padding-left: 20px;
+	}
+}
