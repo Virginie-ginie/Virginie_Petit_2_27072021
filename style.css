@@ -131,6 +131,7 @@ header{
 .icone{
 	display: flex;
 	margin-right:50px;
+	height: 51px;
 	align-items: center;
 	border-top:3px solid #f2f2f2;
 	border-bottom: 3px solid #f2f2f2;
@@ -213,7 +214,6 @@ i.icone_map{
 	justify-content: space-between;
 	margin:auto; 
 	width: 100%;
-	height: 400px;
 }
 .infos {
 	border: 1px solid white;
@@ -223,6 +223,7 @@ i.icone_map{
     border-radius: 15px;
     margin-right: 20px;
 	margin-left:10px ;
+	margin-bottom: 20px;
 	padding:4px 5px 0 4px;
 	text-decoration: none;
 }
@@ -234,6 +235,8 @@ i.icone_map{
 	padding:0px 10px 0px 15px;
 }
 .figure{
+	display: flex;
+	flex-direction: column;
 	width: 100%;
 	margin:0%;
 }
@@ -261,7 +264,7 @@ i.icone_map{
 	margin:-5px 0 15px 0;
 }
 .note_etoile {
-	color: blue;
+	color: #0065FC;
 	display: flex;
 	justify-content: flex-start;
 	padding-left:10px;
@@ -270,8 +273,6 @@ i.icone_map{
 	color:#f2f2f2;
 }
 .note {
-	display: flex;
-	justify-content: flex-start;
 	font-size: 13px;
 	margin-top: -5px;
 }
@@ -286,40 +287,22 @@ i.icone_map{
 	background-color:#f2f2f2;
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
 	border-radius: 20px 20px 20px 20px;
 	padding-bottom: 20px;
     width: 40%;
 	margin-left: 30px;
-	height: 510px;
 	order:2;
 }
 .populaire {
 	height: 105px;
 	width:130px;
-	margin-left: -35px;
-	margin-top:-10px;
-	margin-bottom:10px;
 	object-fit: cover;
+	border:4px solid white;
 	border-top-left-radius:10px;
 	border-bottom-left-radius: 10px;
-	display: flex;
-	flex-direction: column;
 }
 .derniere_photo{
 	width: 130px;
-}
-.les_populaires_aside_card {
-	display: flex;
-	border: 1px solid white;
-	width:85%;
-	margin-bottom:20px;
-	margin-left: auto;
-	margin-right: auto;
-	height: 120px;
-    background-color: white;
-    border-radius: 15px;
-	text-decoration: none;
 }
 .graphique{
 	margin-right: 40px;
@@ -331,15 +314,15 @@ i.icone_map{
 	padding:0px 0px 0px 45px;
 }
 .figure_pop{
-	margin-bottom: 0px;
+	display: flex;
+	background-color: white;
+	border-radius: 20px 20px 20px 20px;
+	width: 80%;
 }
 .tarif {
-	display: flex;
-	flex-direction: column;
 	justify-content: space-between;
-	margin-left: 110px;
-	margin-top: -120px;
-	width:70%;
+	margin-left: 10px;
+	width:47%;
 	height: 80px;
 }
 .nom_hotel_pop {
@@ -349,25 +332,26 @@ i.icone_map{
 }
 .prix_hotel_pop {
 	font-size: 12px;
-	margin: 5px 0px 40px 0px;
 }
 .note_etoile_pop {
-	color: blue;
+	color:#0065FC;
 	display: flex;
 	justify-content: flex-start;
 	margin-right:100px;	
 }
 .note_populaire{
-	display: flex;
-	justify-content: flex-start;
-	align-items: baseline;
 	font-size: 13px;
-	margin-top: -5px;
+
 }
 /* SECTION 4*/
 #Activites {
 	display: flex;
 	padding-left:80px;
+	margin-top:108px
+}
+.partie_activite{
+	display: flex;
+	flex-direction:row;
 }
 .photo2{
 	margin-top:70px
@@ -380,6 +364,7 @@ i.icone_map{
 	font-size: large;
 }
 .figure_activite{
+	width: 100%;
 	margin: 0px;
 	padding:0px;
 }
@@ -388,9 +373,6 @@ i.icone_map{
 	display: flex;
 	object-fit: cover;
 	height: 335px;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	align-items: center;
 	margin-right: 30px;
 	border-top-left-radius: 15px;
 	border-top-right-radius: 15px;
@@ -523,10 +505,11 @@ footer {
 	font-size: 15px;
 	padding:20px 90px 0px 100px;
 }
-@media screen and (min-width:320px) and (max-width:767px)
+@media screen and (min-width:320px) and (max-width:750px)
 {
-	.logo {
-		margin: 0px 0 50px 0px;
+	.body{
+		margin-left: 0;
+		margin-right: 0;
 	}
 	.navigation{
 		flex-direction: column;
@@ -550,17 +533,16 @@ footer {
 	}
 	.navig1{
 		border-bottom: 2px solid blue;
-	
 	}
 	.navig2{
 		border-bottom: 2px solid #f2f2f2;
-	
 	}
 	.navig3{
 		margin:10px;
 		margin: top 100px;
 	}
 	.logo{
+		margin: 0px 0 50px 0px;
 		position: absolute;
 		top:25px;
 		left:25px;
@@ -616,17 +598,17 @@ footer {
 		position:absolute;
 		left: 150px;
 		padding-right: 10px;
-		margin-bottom: 10px;
+		margin:0 0 10px 30px;
 		width: 100px;
-		margin-left: 0px;
 		height:10px;
 		border-left: none;
 	}
 	.button_filtre{
+		display: flex;
 		flex-wrap: wrap;
+		margin-left: 30px;
 	}
 	.famille{
-		margin-left:30px;
 		width: 50px;
 	}
 	.animaux{
@@ -640,9 +622,7 @@ footer {
 	}
 	.icone i{
 		display: inline;
-		flex-direction: column;
 		font-size: 15px;
-		margin-left: 10px;
 		padding:10px;
 	}
 	.icone p {
@@ -767,7 +747,6 @@ footer {
 	footer {
 	flex-direction: column;
 	height: auto;
-	width: 300px;
 	margin-left: 0px;
 	margin-top:5px
 	}
