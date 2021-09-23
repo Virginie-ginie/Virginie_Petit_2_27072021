@@ -3,34 +3,27 @@ html {
 	font-family: "Raleway", sans-serif;
 	margin: 0%;
 	padding:0%;
-
 }
 body {
 	height: 100%;
-	
 	box-sizing: border-box;
-
 }
 /*HEADER*/ 
 header{
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-
 }
 .logo {
 	width: 100px;
 	height: auto;
-	margin: 20px 0 50px 80px;
+	margin: 30px 0 50px 80px;
 	display: flex;
-	padding-bottom: 10px;
 }
 .navigation {
 	display:flex;
 	flex-direction: row-reverse;
-	margin-top:30px;
-	margin-right: 30px;
-
+	margin:30px 30px;
 }
 .logo-menu{
 	display: flex;
@@ -40,12 +33,11 @@ header{
 .navig3,.hebergement_activite a:hover{
     color:#0065FC ;
 	font-weight: bold;
-	border-top:2px solid blue
+	border-top:2px solid #0065FC
 }
 .navig1,.navig2,.navig3{
 	text-decoration: none;
-	padding-top:30px;
-	padding-right: 30px;
+	padding:30px 30px;
 }
 .navig1 {
 	width: 110px;
@@ -68,7 +60,7 @@ header{
 .titre-recherche {
 	font-size: 20px;
 	font-weight: bolder;
-	margin: -30px 0 0 80px;
+	margin:0px 0 0 80px;
 	font-weight: bold;
 }
 .complement {
@@ -78,8 +70,7 @@ header{
 .barrerecherche {
 	display:flex;
 	height: 40px;
-	margin-bottom:20px;
-	margin-left:80px
+	margin:20px 80px;
 }
 .barre_search{
 	border:3px solid #f2f2f2;
@@ -100,8 +91,7 @@ header{
 .menu {
 	display: flex;
 	flex-wrap: wrap;
-	padding-top:15px;
-	padding-bottom: 25px;
+	padding:15px 0 25px 0;
 }
 .logo_i{
     font-size: 10px;
@@ -149,8 +139,7 @@ header{
 .icone p {
 	color:black;
 	font-weight: bold;
-	padding-left: 10px;
-	padding-right: 10px;
+	padding: 0 10px 0 10px;
 	font-size: 13px;
 }
 .icone_famille{
@@ -221,9 +210,7 @@ i.icone_map{
 	height: 169px;
     background-color: white;
     border-radius: 15px;
-    margin-right: 20px;
-	margin-left:10px ;
-	margin-bottom: 20px;
+    margin:0 20px 20px 10px;
 	padding:4px 5px 0 4px;
 	text-decoration: none;
 }
@@ -274,7 +261,6 @@ i.icone_map{
 }
 .note {
 	font-size: 13px;
-	margin-top: -5px;
 }
 .affichage{
     display: flex;
@@ -287,19 +273,21 @@ i.icone_map{
 	background-color:#f2f2f2;
 	display: flex;
 	flex-direction: column;
+	justify-content: center;
 	border-radius: 20px 20px 20px 20px;
 	padding-bottom: 20px;
     width: 40%;
-	margin-left: 30px;
+	margin-left:30px;
+	height: 510px;
 	order:2;
 }
 .populaire {
 	height: 105px;
 	width:130px;
 	object-fit: cover;
-	border:4px solid white;
 	border-top-left-radius:10px;
 	border-bottom-left-radius: 10px;
+	border:4px solid white
 }
 .derniere_photo{
 	width: 130px;
@@ -314,13 +302,13 @@ i.icone_map{
 	padding:0px 0px 0px 45px;
 }
 .figure_pop{
+	margin:10px 0 20px 50px;
 	display: flex;
 	background-color: white;
 	border-radius: 20px 20px 20px 20px;
 	width: 80%;
 }
 .tarif {
-	justify-content: space-between;
 	margin-left: 10px;
 	width:47%;
 	height: 80px;
@@ -341,23 +329,19 @@ i.icone_map{
 }
 .note_populaire{
 	font-size: 13px;
-
 }
 /* SECTION 4*/
 #Activites {
 	display: flex;
+	margin-top:108px;
 	padding-left:80px;
-	margin-top:108px
 }
-.partie_activite{
+.partie-activite{
 	display: flex;
-	flex-direction:row;
+	flex-direction:column;
 }
-.photo2{
-	margin-top:70px
-}
-.photo3{
-	margin-top:70px
+.photo2,.photo3{
+	margin-top:70px;
 }
 .titre_activite {
 	margin-bottom: 27px;
@@ -369,11 +353,9 @@ i.icone_map{
 	padding:0px;
 }
 .image_activite_vieuxport{
-	width: 290px;
-	display: flex;
+	width: 100%;
 	object-fit: cover;
 	height: 335px;
-	margin-right: 30px;
 	border-top-left-radius: 15px;
 	border-top-right-radius: 15px;
 	-webkit-box-shadow: 0 5px 40px -20px black;
@@ -384,25 +366,19 @@ i.icone_map{
 	font-size: 15px;
 	width:290px;
 	height: 125px;
-	margin-right: 30px;
+	margin:0 30px 0 30px;
 	border-top-left-radius: 15px;
 	border-top-right-radius: 15px;
 	-webkit-box-shadow: 0 5px 40px -20px black;
     -moz-box-shadow: 0 5px 40px -20px black;
     box-shadow: 0 5px 40px -20px black;
-	margin-left: 30px;
 	object-fit: cover;
 }
 .image_parc{
-	width:290px;
-	display: flex;
+	width:100%;
 	object-fit: cover;
 	height: 335px;
-	flex-wrap: wrap;
-	justify-content: space-between;
 	align-items: center;
-	margin-right: 20px;
-	margin-left: 20px;
 	box-shadow: 1px 1px 15px #f2f2f2;
 	border-top-left-radius: 15px;
 	border-top-right-radius: 15px;
@@ -413,16 +389,13 @@ i.icone_map{
 	    color: black;
 		font-size: 15px;
 		font-weight:bold;
-		width: 290px;
-		height: 50px;
-		display: flex;
-		flex-direction: column;
 		border-bottom-left-radius: 15px;
 		border-bottom-right-radius: 15px;
 		box-shadow: 1px 1px 15px #f2f2f2;
 		border: 1px solid #f2f2f2;
 		-webkit-box-shadow: 0 5px 40px -20px black;
         -moz-box-shadow: 0 5px 40px -20px black;
+		margin-top:-5px;
 }
 .noms_2_identitques{
 	    color: black;
@@ -430,17 +403,14 @@ i.icone_map{
 		font-weight:bold;
 		box-shadow: 1px 1px 15px #f2f2f2;
 		border: 1px solid #f2f2f2;
-		width: 290px;
-		height: 50px;
-		display: flex;
-		flex-direction: column;
 		margin-bottom: 30px;
 		border-bottom-left-radius: 15px;
 		border-bottom-right-radius: 15px;
 		-webkit-box-shadow: 0 5px 40px -20px black;
         -moz-box-shadow: 0 5px 40px -20px black;
 		margin-top:-4px;
-		margin-left: 30px;	
+		margin-left: 30px;
+		width: 285px;	
 }
 .noms_2_derniers_identitques{
 	    color: black;
@@ -448,38 +418,29 @@ i.icone_map{
 		font-weight:bold;
 		box-shadow: 1px 1px 15px #f2f2f2;
 		border: 1px solid #f2f2f2;
-		width: 290px;
-		height: 50px;
-		display: flex;
-		flex-direction: column;
-		margin-left:30px;
-		margin-bottom: 30px;
+		margin:-4px 0 30px 30px;
 		border-bottom-left-radius: 15px;
 		border-bottom-right-radius: 15px;
 		-webkit-box-shadow: 0 5px 40px -20px black;
         -moz-box-shadow: 0 5px 40px -20px black;
 		border: 1px solid #f2f2f2;
-		margin-top:-4px;
+		width: 286px;
 }
 .nom_parc{
 	    color: black;
 		font-size: 15px;
 		font-weight:bold;
-		width: 290px;
-		height: 50px;
-		margin-left: 20px;
-		display: flex;
-		flex-direction: column;	
 		border-bottom-left-radius: 15px;
 		border-bottom-right-radius: 15px;
 		box-shadow: 1px 1px 15px #f2f2f2;
 		border: 1px solid #f2f2f2;
 		-webkit-box-shadow: 0 5px 40px -20px black;
         -moz-box-shadow: 0 5px 40px -20px black;
+		margin-top:-5px;
 }
 .nom_hotel_activite{
-	margin-left: 20px;
-	margin-top:15px;
+	margin: 10px 0 0 20px;
+	height: 30px;
 }
 /*FOOTER*/
 footer {
@@ -507,6 +468,11 @@ footer {
 }
 @media screen and (min-width:320px) and (max-width:750px)
 {
+	header{
+		position: relative;
+		top:0px;
+		left:0px;
+	}
 	.body{
 		margin-left: 0;
 		margin-right: 0;
@@ -532,7 +498,7 @@ footer {
 		margin-top:40px;
 	}
 	.navig1{
-		border-bottom: 2px solid blue;
+		border-bottom: 2px solid #0065FC;
 	}
 	.navig2{
 		border-bottom: 2px solid #f2f2f2;
@@ -550,7 +516,7 @@ footer {
 	/* SECTION 2*/
 	.titre-recherche {
 		width: 300px;
-		margin-top: -15px;
+		margin-top:100px;
 		margin-left:10px;
 	}
 	.complement {
