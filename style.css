@@ -18,7 +18,7 @@ header{
 	width: 100px;
 	height: auto;
 	margin: 30px 0 50px 80px;
-	display: flex;
+
 }
 .navigation {
 	display:flex;
@@ -108,7 +108,6 @@ header{
 .filtre {
 	margin: 15px 20px 1px 80px;
 	font-weight: bold;
-	display: flex;
 	background-color: white;
 	border: 1px solid white;
 	border-radius:15px;
@@ -117,11 +116,17 @@ header{
 }
 .button_filtre{
 	display: flex;
+	cursor: pointer;
+	align-items: center;
+}
+.icone:hover{
+	background-color:#deebff;
+	transform: scale(1.02);
 }
 .icone{
 	display: flex;
 	margin-right:50px;
-	height: 51px;
+	height: 40px;
 	align-items: center;
 	border-top:3px solid #f2f2f2;
 	border-bottom: 3px solid #f2f2f2;
@@ -132,7 +137,7 @@ header{
 	background-color: #deebff;
 	border-radius: 100%;
 	color: #0065fc;
-	padding:18px;
+	padding:13px;
 	font-size:20px;
 	margin-left: -20px;
 }
@@ -143,9 +148,7 @@ header{
 	font-size: 13px;
 }
 .icone_famille{
-	display: flex;
-	margin-right:50px;
-	align-items: center;
+	margin-left: 0;
 	border-top:3px solid #f2f2f2;
 	border-bottom: 3px solid #f2f2f2;
 	border-right: 3px solid #f2f2f2;
@@ -174,6 +177,7 @@ i.icone_map{
     background-color: #0065FC;
     color: white;
 	font-weight: bold;
+	cursor: pointer;
 }
 .rechercher_mobile{
 	display: none;
@@ -263,22 +267,18 @@ i.icone_map{
 	font-size: 13px;
 }
 .affichage{
-    display: flex;
-    justify-content: flex-start;
 	font-weight: bold;
 	padding:0  0 20px 20px;	
 }
 /* POPULAIRE*/
 .les_populaires {
 	background-color:#f2f2f2;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
 	border-radius: 20px 20px 20px 20px;
 	padding-bottom: 20px;
     width: 40%;
+	padding-top: 20px;
 	margin-left:30px;
-	height: 510px;
+	height: 490px;
 	order:2;
 }
 .populaire {
@@ -288,6 +288,9 @@ i.icone_map{
 	border-top-left-radius:10px;
 	border-bottom-left-radius: 10px;
 	border:4px solid white
+}
+.les_populaires_aside{
+	margin-top:30px;
 }
 .derniere_photo{
 	width: 130px;
@@ -450,6 +453,7 @@ footer {
 	flex-wrap: wrap;
 	justify-content: flex-start;
 	height: 150px;
+	cursor: pointer;
 }
 .propos {
 	font-size: 15px;
@@ -466,23 +470,24 @@ footer {
 	font-size: 15px;
 	padding:20px 90px 0px 100px;
 }
-@media screen and (min-width:320px) and (max-width:750px)
+/*---------------- MEDIA QUERIES---------------------------*/
+
+@media only screen and (min-width:320px) and (max-width:750px)
 {
-	header{
-		position: relative;
-		top:0px;
-		left:0px;
-	}
+	
 	.body{
 		margin-left: 0;
 		margin-right: 0;
+	}
+	.logo{
+		width: 70px;
 	}
 	.navigation{
 		flex-direction: column;
 		width: 100%;
 		margin-bottom: 0px;
 		margin-right: 10px;
-		margin-left:10px;
+		margin-left:0px;
 		height: 100px;
 	}
 	.hebergement_activite{
@@ -491,15 +496,16 @@ footer {
 	}
 	.navig1,.navig2{
 		margin:50px 0;
-		padding:0;
+		padding:10px;
 		width: 50%;
 		text-align: center;
 	}
 	.inscrire{
 		position: absolute;
 		top:0;
-		right: 0;
+		right:10px;
 		margin-top:40px;
+		font-size: 15px;
 	}
 	.navig1{
 		border-bottom: 2px solid #0065FC;
@@ -509,7 +515,7 @@ footer {
 	}
 	.navig3{
 		margin:10px;
-		margin: top 100px;
+		margin-top:100px;
 	}
 	.logo{
 		margin: 0px 0 50px 0px;
@@ -519,19 +525,25 @@ footer {
 	}
 	/* SECTION 2*/
 	.titre-recherche {
-		width: 300px;
-		margin-left:10px;
+		width:100%;
+		margin-left:0px;
 	}
 	.complement {
 		font-size: 13px;
-		margin-left: 10px;
+		margin-left: 0px;
+	}
+	i.icone_map{
+		height: 33px;
+		width: 30px;
+		line-height: 2;
 	}
 	.barrerecherche{
-		margin-left:10px;
+		margin-left:0px;
 	}
 	.barre_search{
 		border-right: none;
 		width: 170px;
+		height: 35px;
 	}
 	.recherche{
 		display: none;
@@ -542,17 +554,18 @@ footer {
 		justify-content: center;
 	}
 	.rechercher_mobile{
-		height: 50px;
+		height: 35px;
+		width:35px;
 		display: flex;
     	align-items: center;
 		text-align: center;
-    	border-radius: 15px;
+    	border-radius: 10px;
     	background-color: #0065FC;
     	color: white;
 		font-weight: bold;
 	}
 	.filtre {
-		margin: 0px 15px 1px 10px;
+		margin: 0px 15px 1px 0px;
 		font-size: 16px;
 		display:inline-block;
 	}
@@ -562,56 +575,57 @@ footer {
 	}
 	.icone p{
 		margin-top: 15px;
-		font-size: 18px;
+		margin-left: 0px;
 	}
 	.icone_famille{
-		position:absolute;
-		left: 150px;
-		padding-right: 10px;
-		margin:0 0 10px 30px;
-		width: 100px;
-		height:10px;
+		padding-right:10px;
+		margin:0 0 10px 0px;
+		height:20px;
 		border-left: none;
 	}
 	.button_filtre{
 		display: flex;
 		flex-wrap: wrap;
-		margin-left: 30px;
+		margin-left: 20px;
+		width: 100%;
 	}
-	.famille{
-		width: 50px;
+	.romantique{
+		padding-left: 0;
+
 	}
 	.animaux{
-		width:90px;
+		margin-left: 10px;
+		width: 115px;
 	}
 	.icone{
-		padding-right: 10px;
 		margin-bottom: 10px;
-		height:25px;
-		align-items: center;
+		height:35px;
+		margin-right: 30px;
 	}
 	.icone i{
 		display: inline;
-		font-size: 15px;
-		padding:10px;
-	}
-	.icone p {
+		padding-bottom: 10px;
+		padding-top: 10px;
+		padding-right: 10px;
 		padding-left: 10px;
-		font-size: 10px;
-		align-items: center;
-		position: relative;
 	}
 	.logo_i{
-		margin-left:10px;
+		margin-left:0px;
 		padding:5px;
 	}
 	.logements{
 		font-size: 14px;
+		width: 98%;
 	}
 	/*SECTION 3*/
 	#hebergement_et_populaire {
 		flex-direction: column-reverse;
 		margin: 30px 0px 0px 5px;
+
+	}
+	.titre{
+		font-size: 15px;
+		padding-left: 0;
 	}
 	.main {
 		background-color: white;
@@ -623,11 +637,13 @@ footer {
 	.hebergement {
  		 flex-direction: column;
  		 flex-wrap: nowrap;
+		  width: 100%;
 	}
 	.infos {
 		width:100%;
 		height: 190px;
 		margin-left: 0;
+		margin-right: 0;
 		margin-bottom: 15px;
 		box-shadow: 1px 1px 15px #f2f2f2;
 	}
@@ -638,6 +654,7 @@ footer {
 		margin-bottom: 10px;
 	}
 	.affichage{
+		font-size: 15px;
 		padding-left: 0;
 	}
 
@@ -646,7 +663,7 @@ footer {
 		margin-left:10px;
     	width: 100%;
 		height: 420px;
-		padding-top:10px;
+		padding-top:30px;
 		border-radius:0;
 }
 	.populaire {
@@ -670,62 +687,87 @@ footer {
 }
 	.nom_hotel_pop {
 		width:100%;
-	margin-bottom:0px;
+		margin-bottom:0px;
 }
 	.prix_hotel_pop{
-	margin-bottom:25px;
+		margin-bottom:25px;
 }
 	/* SECTION 4*/
 	#Activites {
-	flex-direction: column;
-	padding-left:0px;
-	width: 100%;
-	margin-top:0
+		flex-direction: column;
+		padding-left:0px;
+		width: 100%;
+		margin-top:0;
 	}
 	.titre_activite {
-	margin-left:0px;
+		margin-left:0px;
+		font-size: 15px;
 	}
 	.photo2{
-	margin-top:20px;
-	margin-left: 0px;
+		margin-top:20px;
+		margin-left: 0px;
 	}
 	.photo3{
-	margin-top:20px;
-	margin-left: 0px;
+		margin-top:20px;
+		margin-left: 0px;
 	}
 	.image_activite_vieuxport{
-	height: 100px;
-	width: 100%;
+		height: 100px;
+		width: 98%;
+		margin-right: 0;
 	}
 	.images_4_identitques{
-	height: 100px;
-	width: 100%;
-	margin-left: 0;
+		height: 100px;
+		width: 98%;
+		margin-left: 0;
+		margin-right: 0;
 	}
 	.image_parc{
-	height: 100px;
-	width: 100%;
+		height: 100px;
+		width: 98%;
 	}
 	.nom_vieux_port{
-	width: 100%;
-	font-size: 13px;
-	height: 40px;
+		width: 98%;
+		font-size: 13px;
+		height: 40px;
 	}
 	.noms_2_identitques,.noms_2_derniers_identitques,.nom_parc{
-	height: 40px;
-	width: 100%;
-	font-size: 13px;
-	margin-left: 0;
+		height: 40px;
+		width: 98%;
+		font-size: 13px;
+		margin-left: 0;
 	}
 	/*FOOTER*/
 	footer {
-	flex-direction: column;
-	height: auto;
-	margin-left: 0px;
-	margin-top:5px
+		flex-direction: column;
+		height: auto;
+		margin-left: 0px;
+		margin-top:5px;
+		padding-top:25px;
+		padding-bottom: 25px;;
 	}
-	.propos,.footer_hebergement,.assistance {
-	padding-left:20px;
-	width: 50%;
+	.propos,.assistance {
+		padding-left:20px;
+		width: 50%;
+		padding-top:10px
+	}
+	.footer_hebergement{
+		padding-left:20px;
+		width: 20%;
+	}
+	.texte_footer{
+		margin:5px;
+		width: 190px;
+		margin-bottom: 15px;
+	}
+	.titre_footer_propos{
+		margin-bottom: 20px;
+	}
+	.titre_footer_hebergements{
+		margin-bottom: 20px;
+		width: 150px;
+	}
+	.titre_footer_assistance{
+		margin-bottom: 20px;
 	}
 }
