@@ -649,7 +649,7 @@ footer {
 	}
 	.images {
 		height: 110px;
-		width: 280px;
+		width: 100%;
 	}
 	.note {
 		margin-bottom: 10px;
@@ -748,7 +748,7 @@ footer {
 	}
 	/*FOOTER*/
 	footer {
-		width:300px;
+		width:100%;
 		flex-direction: column;
 		height: auto;
 		margin-left:10px;
