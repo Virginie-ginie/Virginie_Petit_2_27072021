@@ -289,7 +289,7 @@ i.icone_map{
 	object-fit: cover;
 	border-top-left-radius:10px;
 	border-bottom-left-radius: 10px;
-	border:4px solid white
+	border:4px solid white;
 }
 .les_populaires_aside{
 	margin-top:30px;
@@ -307,7 +307,7 @@ i.icone_map{
 	padding:0px 0px 0px 45px;
 }
 .figure_pop{
-	margin:10px 0 20px 50px;
+	margin:0 0 20px 50px;
 	display: flex;
 	background-color: white;
 	border-radius: 20px 20px 20px 20px;
@@ -344,9 +344,6 @@ i.icone_map{
 }
 .photos_activite_pc{
 	display: flex;
-}
-.photos_activite_tablette{
-	display:none;
 }
 .photo2,.photo3{
 	margin-top:70px;
@@ -464,6 +461,9 @@ footer {
 .propos {
 	font-size: 15px;
 	padding: 20px 50px 0px 80px;
+}
+.titre_footer_propos{
+	font-weight:bolder;
 }
 .texte_footer {
 	font-size: 13px;
@@ -796,11 +796,11 @@ footer {
 		margin-bottom: 20px;
 	}
 }
-@media only screen and (min-width:768px) and (max-width:1200px) 
+@media only screen and (min-width:768px) and (max-width:1023px) 
 {
 	.navigation{
 		flex-direction: column;
-		width: 930px;
+		width: 768px;
 		margin-bottom: 0px;
 		margin-right: 0px;
 		margin-left:0px;
@@ -808,7 +808,7 @@ footer {
 	}
 	.hebergement_activite{
 		display: flex;
-		width: 930px;
+		width: 760px;
 	}
 	.navig1,.navig2{
 		margin:50px 0px 50px 10px;
@@ -818,12 +818,17 @@ footer {
 		font-size: 20px;
 	}
 	.navig3,.hebergement_activite a:hover{
+		color:#0065FC ;
+		font-weight: bold;
+		border-bottom;:2px solid #0065FC
+	}
+	.navig3,.hebergement_activite a:hover{
 		border-top:none
 	}
 	.inscrire{
 		position: absolute;
 		top:0;
-		left:740px;
+		left:600px;
 		margin-top:40px;
 		font-size: 20px;
 	}
@@ -845,15 +850,18 @@ footer {
 		width: 120px;
 	}
 	/* SECTION 2*/
+	.zone_recherche{
+		width:760px;
+	}
 	.titre-recherche {
 		width:90%;
 		height: 100%;
 		margin-left:10px;
 		margin-top:50px;
-		font-size: 28px;
+		font-size:30px;
 	}
 	.complement {
-		font-size: 25px;
+		font-size: 20px;
 		margin-left: 10px;
 	}
 	i.icone_map{
@@ -863,6 +871,8 @@ footer {
 	}
 	.barrerecherche{
 		margin-left:10px;
+		width: 0;
+		margin-right: 0;
 	}
 	.barre_search{
 		border-right: none;
@@ -895,17 +905,17 @@ footer {
 	}
 	.menu{
 		margin-left: 15px;
-		width: 900px;
+		width:700px;
 	}
 	.button_filtre{
 		display: flex;
 		flex-wrap: wrap;
 		margin-left: 20px;
-		width: 950px;
 	}
 	.icone{
 		height: 50px;
 		font-size: 20px;
+		margin-top:10px;
 	}
 	.icone i{
 		padding:18px;
@@ -930,8 +940,7 @@ footer {
 		margin-top:30px;
 	}
 	.main {
-		
-		width: 890px;
+		width:740px;
 		padding:0px 0 20px 5px;
 		margin-left: 0px;
 		height: 100%;
@@ -971,17 +980,15 @@ footer {
 	/* POPULAIRE*/
 	.les_populaires{
 		margin-left:0px;
-    	width:890px;
+    	width:740px;
 		height: 430px;
 		padding-top:0px;
 		border-radius:25px;
-		margin:auto;
 	}
 	.les_populaires_aside{
 		display: flex;
 	}
 	.les_populaires_aside_card{
-		width: 40%;
 		margin:10px;
 	}
 	.titre_1{
@@ -989,20 +996,18 @@ footer {
 		font-size: 25px;
 	}
 	.populaire {
-		width:270px;
+		width:198px;
 		height:170px;
 		border-top-left-radius: 25px;
 		border-top-right-radius: 25px;
-		border:3px solid white;
 	}
 	.figure_pop{
-		width: 100%;
+		width:205px;
 		display: flex;
 		flex-direction: column;
-	    margin:auto;
+	    margin-left:0px;
 		margin-bottom: 30px;
 		height: 325px;
-
 	}
 	.tarif {
     	margin-left: 10px;
@@ -1010,30 +1015,27 @@ footer {
 	
 	}
 	.nom_hotel_pop {
-		width:80%;
+		width:100%;
 		font-size:20px;
 		margin-bottom:0px;
 
 	}
 	.prix_hotel_pop{
-		font-size: 20px;
+		font-size:15px;
 		margin-top:10px;
 		margin-bottom:15px;
 	}
 	.note_populaire{
-		font-size: 20px;
+		font-size:15px;
 	}
 	/* SECTION 4*/
 	#Activites {
 		flex-direction: column;
 		padding-left:0px;
-		width: 100%;
+		width:760px;
 		margin-top:0;
 	}
 	.photos_activite_pc{
-		display: none
-	}
-	.photos_activite_tablette{
 		display:grid;
 		grid-template-columns: 1fr 1fr;
 		flex-wrap: nowrap;
@@ -1061,34 +1063,27 @@ footer {
 	.photo_parc_longchamp{
 		margin-top:20px;
 	}
-	.image_activite_vieuxport{
+	.image_activite_vieuxport,.image_parc{
 		height: 180px;
-		width: 400px;
+		width:330px;
 		margin-left: 10px;
 		margin-right: 40px;
 	}
 	.images_4_identitques{
 		height: 180px;
-		width: 400px;
+		width:330px;
 		margin-left: 10px;
 		margin-right: 40px;
-	}
-	.image_parc{
-		height: 185px;
-		width: 405px;
-		margin-left: 10px;
-		margin-right: 40px;
-		margin-top:20px
 	}
 	.nom_vieux_port{
-		width: 400px;
+		width:333px;
 		font-size: 20px;
 		height: 60px;
 		margin-left: 10px;
 	}
 	.noms_2_identitques,.noms_2_derniers_identitques,.nom_parc{
 		height: 60px;
-		width: 405px;
+		width:333px;
 		font-size: 20px;
 		margin-left: 5px;
 	}
@@ -1097,7 +1092,7 @@ footer {
 		flex-direction:row;
 		flex-wrap: nowrap;
 		height: auto;
-		width: 910px;
+		width: 750px;
 		margin-left: 10px;
 		margin-top:5px;
 		padding-top:25px;
@@ -1106,8 +1101,10 @@ footer {
 	.propos,.assistance {
 		padding-left:10px;
 		font-size: 20px;
-		width: 50%;
-		padding-top:10px
+		width: 35%;
+		padding-top:10px;
+		padding-right: 0;
+		margin-right: 20px;
 	}
 	.footer_hebergement{
 		font-size: 20px;
@@ -1116,11 +1113,10 @@ footer {
 	.texte_footer{
 		margin:5px;
 		font-size: 18px;
-		width: 300px;
 		margin-bottom: 15px;
 	}
 	.footer_hebergement{
-
+		margin-right: 30px;
 		padding-right: 0;
 	}
 	.titre_footer_propos{
@@ -1128,22 +1124,23 @@ footer {
 	}
 	.titre_footer_hebergements{
 		margin-bottom: 20px;
+		margin-top:0px;
 		width: 200px;
 	}
 	.titre_footer_assistance{
+		width: 0;
+		margin:0;
 		margin-bottom: 20px;
 	}
 }
 
-@media only screen and (min-width:1201px) and (max-width:1535px){
+@media only screen and (min-width:1024px) and (max-width:1535px){
 	#hebergement_et_populaire {
-		margin:auto;
+		margin:80px;
 	}
 	.les_populaires {
-		width: 40%;
 		margin-left: 20px;
 		margin-bottom: 20px;
-		height: 490px;
 	}
 	.main {
 		width: 100%;
@@ -1177,9 +1174,8 @@ footer {
 	}
 }
 
-@media only screen and (min-width:1025px) and (max-width:4000px)
+@media only screen and (min-width:1024px) and (max-width:4000px)
 {
-
 	body{
 		max-width: 2056px;
 		margin: auto;
