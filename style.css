@@ -826,7 +826,6 @@ footer {
 	.navig3,.hebergement_activite a:hover{
 		color:#0065FC ;
 		font-weight: bold;
-		border-bottom;:2px solid #0065FC
 	}
 	.navig3,.hebergement_activite a:hover{
 		border-top:none
@@ -834,7 +833,7 @@ footer {
 	.inscrire{
 		position: absolute;
 		top:0;
-		left:600px;
+		left:500px;
 		margin-top:40px;
 		font-size: 20px;
 	}
@@ -847,6 +846,7 @@ footer {
 	.navig3{
 		margin:10px;
 		margin-top:100px;
+		padding-bottom:0;
 	}
 	.logo{
 		margin: 0px 0 50px 0px;
@@ -946,7 +946,7 @@ footer {
 		margin-top:30px;
 	}
 	.main {
-		width:740px;
+		width:730px;
 		padding:0px 0 20px 5px;
 		margin-left: 0px;
 		height: 100%;
@@ -986,11 +986,9 @@ footer {
 	/* POPULAIRE*/
 	.les_populaires{
 		margin-left:0px;
-    	width:740px;
+    	width:730px;
 		height: 430px;
 		padding-top:0px;
-		margin-right:100px ;
-		
 		border-radius:25px;
 	}
 	.les_populaires_aside{
@@ -1008,26 +1006,23 @@ footer {
 		height:170px;
 		border-top-left-radius: 25px;
 		border-top-right-radius: 25px;
-		
 	}
 	.figure_pop{
 		width:205px;
 		display: flex;
 		flex-direction: column;
-	    margin-left:0px;
+	    margin-left:10px;
 		margin-bottom: 30px;
 		height: 325px;
 	}
 	.tarif {
-    	margin-left: 10px;
+    	margin-left:10px;
 		width:90%;
-	
 	}
 	.nom_hotel_pop {
 		width:100%;
 		font-size:20px;
-		margin-bottom:0px;
-
+		margin-bottom:0px
 	}
 	.prix_hotel_pop{
 		font-size:15px;
@@ -1050,12 +1045,15 @@ footer {
 		flex-wrap: nowrap;
 		width: 100%;
 	}
+	.figure_activite{
+		margin:0 
+	}
 	.titre_activite {
 		margin-left:15px;
 		font-size: 25px;
 	}
 	.photo_vieux_port{
-		margin-left: 20px;
+		margin-left: 0px;
 	}
 	.photo_fort{
 		margin-top:70px;
@@ -1085,7 +1083,7 @@ footer {
 		margin-right: 40px;
 	}
 	.nom_vieux_port{
-		width:333px;
+		width:330px;
 		font-size: 20px;
 		height: 60px;
 		margin-left: 10px;
@@ -1153,7 +1151,6 @@ footer {
 		margin-bottom: 20px;
 	}
 	.image_heberg_pop_activite{
-
 		width: 100%;
 	}
 	.main {
@@ -1164,11 +1161,8 @@ footer {
 	.infos{
 		display: flex;
 		flex-wrap: wrap;
-		margin:0 10px 10px 0;
+		margin:0 15px 15px 15px;
 		width: 26%;
-	}
-	.images{
-		width:100%;
 	}
 	.les_populaires_aside{
 		display: flex;
@@ -1176,12 +1170,13 @@ footer {
 	}
 	.figure_pop{
 		margin-left:10px;
+		width: 94%;
 	}
 	.populaire {
-		width: 110px;
+		width: 120px;
 	}
 	.nom_hotel_pop{
-		font-size: 10px;
+		font-size: 13px;
 		width: 70%;
 	}
 	.prix_hotel_pop{
@@ -1193,7 +1188,6 @@ footer {
 		padding-left: 30px;
 	}
 	.footer_hebergement {
-		font-size: 15px;
 		padding: 20px 150px 0px 150px;
 	}
 }
