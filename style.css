@@ -201,7 +201,7 @@ i.icone_map{
 	background-color:#f2f2f2;
 	width: 60%;
 	padding:20px 0 20px 5px;
-	height: 490px;
+
 }
 .hebergement {
 	display: flex;
@@ -1144,7 +1144,9 @@ footer {
 }
 @media screen and (min-width:1024px) and (max-width:1535px){
 	#hebergement_et_populaire {
-		margin:80px;
+		margin-left:50px;
+		margin-bottom: 0;
+	
 	}
 	.les_populaires {
 		margin-left: 20px;
@@ -1152,7 +1154,17 @@ footer {
 	}
 	.main {
 		width: 100%;
-		margin-left: 0;
+		margin-left:0px;
+		height: 490px;
+	}
+	.infos{
+		display: flex;
+		flex-wrap: wrap;
+		margin:0 10px 10px 0;
+		width: 150px;
+	}
+	.images{
+		width:150px;
 	}
 	.les_populaires_aside{
 		display: flex;
