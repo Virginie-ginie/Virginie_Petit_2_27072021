@@ -1152,6 +1152,10 @@ footer {
 		margin-left: 20px;
 		margin-bottom: 20px;
 	}
+	.image_heberg_pop_activite{
+
+		width: 100%;
+	}
 	.main {
 		width: 100%;
 		margin-left:0px;
@@ -1161,10 +1165,10 @@ footer {
 		display: flex;
 		flex-wrap: wrap;
 		margin:0 10px 10px 0;
-		width: 150px;
+		width: 26%;
 	}
 	.images{
-		width:150px;
+		width:100%;
 	}
 	.les_populaires_aside{
 		display: flex;
