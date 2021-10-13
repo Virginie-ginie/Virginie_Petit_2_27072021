@@ -804,6 +804,9 @@ footer {
 
 @media screen and (min-width:768px) and (max-width:1023px) 
 {
+	header{
+		width: 100%;
+	}
 	.navigation{
 		flex-direction: column;
 		width: 768px;
@@ -1049,7 +1052,7 @@ footer {
 		margin:0 
 	}
 	.titre_activite {
-		margin-left:15px;
+		margin-left:50px;
 		font-size: 25px;
 	}
 	.photo_vieux_port{
@@ -1071,28 +1074,31 @@ footer {
 		margin-top:20px;
 	}
 	.image_activite_vieuxport,.image_parc{
-		height: 180px;
-		width:330px;
-		margin-left: 10px;
+		height: 450px;
+		width:308px;
+		margin-left: 60px;
 		margin-right: 40px;
 	}
 	.images_4_identitques{
 		height: 180px;
-		width:330px;
+		width:308px;
 		margin-left: 10px;
 		margin-right: 40px;
 	}
 	.nom_vieux_port{
-		width:330px;
+		width:308px;
 		font-size: 20px;
 		height: 60px;
-		margin-left: 10px;
+		margin-left: 60px;
 	}
 	.noms_2_identitques,.noms_2_derniers_identitques,.nom_parc{
 		height: 60px;
-		width:333px;
+		width:308px;
 		font-size: 20px;
-		margin-left: 5px;
+		margin-left:10px;
+	}
+	.nom_parc{
+		margin-left: 60px;
 	}
 	/*FOOTER*/
 	footer {
