@@ -949,7 +949,7 @@ footer {
 		margin-top:30px;
 	}
 	.main {
-		width:730px;
+		width:100%;
 		padding:0px 0 20px 5px;
 		margin-left: 0px;
 		height: 100%;
@@ -989,7 +989,7 @@ footer {
 	/* POPULAIRE*/
 	.les_populaires{
 		margin-left:0px;
-    	width:730px;
+    	width:100%;
 		height: 430px;
 		padding-top:0px;
 		border-radius:25px;
@@ -1005,13 +1005,13 @@ footer {
 		font-size: 25px;
 	}
 	.populaire {
-		width:198px;
+		width:96%;
 		height:170px;
 		border-top-left-radius: 25px;
 		border-top-right-radius: 25px;
 	}
 	.figure_pop{
-		width:205px;
+		width:194px;
 		display: flex;
 		flex-direction: column;
 	    margin-left:10px;
